@@ -15,6 +15,7 @@ import osgeo
 from osgeo import gdal
 from osgeo import gdal_array
 from osgeo import osr
+from affine import Affine
 
 import rasterio
 from rasterio.transform import from_origin
@@ -48,8 +49,10 @@ def npy_long_to_wide (arr,lats_id,lons_id,vals_id):
 def npy_to_tif (arr,lats_id,lons_id,vals_id,out_name):
     
     lats = arr[:,lats_id]
+    lats = lats[lats != 0]
     lons = arr[:,lons_id]
-     
+    lons = lons[lons != 0]
+    
     rows, row_pos = np.unique(lats, return_inverse=True)
     cols, col_pos = np.unique(lons, return_inverse=True)
     
@@ -99,14 +102,22 @@ def npy_to_tif (arr,lats_id,lons_id,vals_id,out_name):
     
     # Write it out to a file.
     
-     
-    transform = from_origin(xmin, ymax, xres, yres)
+#    transform = Affine(dx, 0, xmin, 0, -dy, ymax) * Affine.translation(-0.5, -0.5)
+#    with rasterio.open("file.tif", "w", "GTiff", len(xi), len(yi), 1, "EPSG:4326",
+#                   transform, rasterio.float32, nodata) as ds:
+#    ds.write(xx.astype(np.float32), 1)
+    
+    #transform = from_origin(xmin, ymax, xres, yres)
+    #transform = Affine(xres, 0, xmin, 0, -yres, ymax) * Affine.translation(-0.5, -0.5)
+    #transform = Affine(xres, 0, xmin, 0, -yres, ymax) * Affine.translation(-0.5, -0.5)
     #arr = pivoted_arr3
+    transform = [0.00026949458523585647, 0, xmin, 0, -0.00026949458523585647, ymax]
+    #{ "type": "Projection",  "crs": "EPSG:4326",  "transform": [0.00026949458523585647, 0, 110.50868012723006, 0, -0.00026949458523585647, -9.635778895108048 ]}
     
     new_dataset = rasterio.open(out_name, 'w', driver='GTiff',
                                 height = pivoted_arr3.shape[0], width = pivoted_arr3.shape[1],
                                 count=1, dtype=str(pivoted_arr3.dtype),
-                                crs='+proj=latlong',
+                                crs='EPSG:4326',
                                 transform=transform)
     
     new_dataset.write(pivoted_arr3, 1)

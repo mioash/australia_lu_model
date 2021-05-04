@@ -191,19 +191,39 @@ def LatLonImg(img,bands_to_get,npts):
     #arr = np.vstack([lats, lons, sa2id, cr, fr, gr, ur, ot, lprev, lpred]).transpose()
     return arr.transpose()
 
-pts = LatLonImg(img_ready, bbands,5000)
+pts = LatLonImg(img_ready, bbands,15000)
 pts = pts[pts[:,2] != -9999,:]
 #print(pts)
 nbands = ['latitude','longitude']+bbands#,'lc_dep','lc_t1','lc_t2','lc_t3','lc_t4','lc_t5','constant']#+bbands
 
+dont_use = ['c_9_nb', 'f_9_nb', 'g_9_nb', 'b_9_nb', 'w_9_nb', 'o_9_nb',
+            'c_27_nb', 'f_27_nb', 'g_27_nb', 'b_27_nb', 'w_27_nb', 'o_27_nb',
+            'c_67_nb', 'f_67_nb', 'g_67_nb', 'b_67_nb', 'w_67_nb', 'o_67_nb',
+            'tenure2018','constant','lc_dep','latitude','longitude','aspect','landforms',
+            'DES_000_200_EV','PTO','AWC','c_67_27b', 'f_67_27b', 'g_67_27b', 'b_67_27b', 'w_67_27b', 'o_67_27b',
+            ##highly_correlated
+            'BDW', 'CLY', 'SLT', 'SND', 'PH', 'AWC', 'NTO', 'PTO','p05', 'p08', 'p10', 'p11',  'p16',
+            'p17', 'p18', 'p19',]
+
 pts_mx = pd.DataFrame(data=pts, columns=nbands)
 #pts_mx.to_csv(path_or_buf='tas_1st_test.csv',index=False)
+
+###find correlated variables
+corr_matrix = pts_mx.corr().abs()
+
+# Select upper triangle of correlation matrix
+upper = corr_matrix.where(np.triu(np.ones(corr_matrix.shape), k=1).astype(np.bool))
+
+# Find index of feature columns with correlation greater than 0.95
+to_drop = [column for column in upper.columns if any(upper[column] > 0.95)]
+
+
 
 labels = np.array(pts_mx['lc_dep'])
 
 # Remove the labels from the features
 # axis 1 refers to the columns
-features= pts_mx.drop(['lc_dep','constant','latitude','longitude'], axis = 1)
+features= pts_mx.drop(dont_use, axis = 1)
 
 # Saving feature names for later use
 feature_list = list(features.columns)
@@ -215,20 +235,30 @@ from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import classification_report, confusion_matrix, accuracy_score
 # Split the data into training and testing sets
-train_features, test_features, train_labels, test_labels = train_test_split(features, labels, test_size = 0.2,
-                                                                            random_state = 55)
 
-# Instantiate model 
-rf = RandomForestClassifier(n_estimators= 20, random_state=55)
+acc = np.zeros((10,2))
 
-# Train the model on training data
-rf.fit(train_features, train_labels)
+for i in range(5,6):
+    train_features, test_features, train_labels, test_labels = train_test_split(features, labels, test_size = i/10,
+                                                                                random_state = 55)
+    # Instantiate model 
+    rf = RandomForestClassifier(n_estimators= 100, random_state=55)
+    
+    # Train the model on training data
+    rf.fit(train_features, train_labels)
+    
+    y_pred = rf.predict(test_features)
+    
+    acco = int(accuracy_score(test_labels, y_pred)*1000)
+    acc[i-1,0] = acco
+    acc[i-1,1] = np.shape(train_features)[0]
+    
+    #print(confusion_matrix(test_labels,y_pred))
+    #print(classification_report(test_labels,y_pred))
+    #print(accuracy_score(test_labels, y_pred))
 
-y_pred = rf.predict(test_features)
-
-print(confusion_matrix(test_labels,y_pred))
-print(classification_report(test_labels,y_pred))
-print(accuracy_score(test_labels, y_pred))
+from sklearn.model_selection import cross_val_score
+scores = cross_val_score(rf, train_features, train_labels, cv=10)
 
 # Get numerical feature importances
 importances = list(rf.feature_importances_)
@@ -241,6 +271,60 @@ feature_importances = sorted(feature_importances, key = lambda x: x[1], reverse 
 
 # Print out the feature and importances 
 [print('Variable: {:20} Importance: {}'.format(*pair)) for pair in feature_importances];
+
+
+
+##random search
+from sklearn.model_selection import RandomizedSearchCV# Number of trees in random forest
+n_estimators = [int(x) for x in np.linspace(start = 50, stop = 500, num = 10)]
+# Number of features to consider at every split
+max_features = ['auto', 'sqrt']
+# Maximum number of levels in tree
+max_depth = [int(x) for x in np.linspace(10, 110, num = 11)]
+max_depth.append(None)
+# Minimum number of samples required to split a node
+min_samples_split = [10, 50, 100, 150 , 200, 500]
+# Minimum number of samples required at each leaf node
+min_samples_leaf = [1, 2, 4]
+# Method of selecting samples for training each tree
+bootstrap = [True, False]# Create the random grid
+random_grid = {'n_estimators': n_estimators,
+               'max_features': max_features,
+               'max_depth': max_depth,
+               'min_samples_split': min_samples_split,
+               'min_samples_leaf': min_samples_leaf,
+               'bootstrap': bootstrap}
+
+rfa = RandomForestClassifier()
+# Random search of parameters, using 3 fold cross validation, 
+# search across 100 different combinations, and use all available cores
+rf_random = RandomizedSearchCV(estimator = rfa, param_distributions = random_grid, n_iter = 100, cv = 3, verbose=2, random_state=42, n_jobs = -1)# Fit the random search model
+rf_random.fit(train_features, train_labels)
+
+
+def evaluate(model, test_features, test_labels):
+    predictions = model.predict(test_features)
+    #errors = abs(predictions - test_labels)
+    #mape = 100 * np.mean(errors / test_labels)
+    #accuracy = 100 - mape
+    #rrmse = np.sqrt(metrics.mean_squared_error(test_labels, predictions))
+    #nrmse = rrmse / np.mean(test_labels)
+    acco = accuracy_score(test_labels, y_pred)
+    print('Model Performance')
+    print(acco)
+    #print('Average Error: {:0.4f} degrees.'.format(np.mean(errors)))
+    #print('Accuracy = {:0.2f}%.'.format(accuracy))
+    #print('RMSE: ', rrmse)
+    #print('NRMSE: ', nrmse)    
+    return RandomForestClassifier(n_estimators = 100, random_state = 42)
+
+best_random = rf_random.best_estimator_
+random_accuracy = evaluate(best_random, test_features, test_labels)
+
+
+
+
+
 
 
 # Import matplotlib for plotting and use magic command for Jupyter Notebooks

@@ -19,15 +19,27 @@ from numpy import savetxt
 #from osgeo import osr
 #import time
 
-crop = ee.Image('users/mioash/Calderon_etal_Australian_land-cover/Tas_lc2010_anuclim_nneigh_ndist_naccess_tenure_cropland').rename('prob_crop')
-forest = ee.Image('users/mioash/Calderon_etal_Australian_land-cover/Tas_lc2010_anuclim_nneigh_ndist_naccess_tenure_forest').rename('prob_forest')
-grass = ee.Image('users/mioash/Calderon_etal_Australian_land-cover/Tas_lc2010_anuclim_nneigh_ndist_naccess_tenure_grassland').rename('prob_grass')
-urb = ee.Image('users/mioash/Calderon_etal_Australian_land-cover/Tas_lc2010_anuclim_nneigh_ndist_naccess_tenure_urban').rename('prob_urban')
-other = ee.Image('users/mioash/Calderon_etal_Australian_land-cover/Tas_lc2010_anuclim_nneigh_ndist_naccess_tenure_other').rename('prob_other')
+#crop = ee.Image('users/mioash/Calderon_etal_Australian_land-cover/Tas_lc2010_anuclim_nneigh_ndist_naccess_tenure_cropland').rename('prob_crop')
+#forest = ee.Image('users/mioash/Calderon_etal_Australian_land-cover/Tas_lc2010_anuclim_nneigh_ndist_naccess_tenure_forest').rename('prob_forest')
+#grass = ee.Image('users/mioash/Calderon_etal_Australian_land-cover/Tas_lc2010_anuclim_nneigh_ndist_naccess_tenure_grassland').rename('prob_grass')
+#urb = ee.Image('users/mioash/Calderon_etal_Australian_land-cover/Tas_lc2010_anuclim_nneigh_ndist_naccess_tenure_urban').rename('prob_urban')
+#other = ee.Image('users/mioash/Calderon_etal_Australian_land-cover/Tas_lc2010_anuclim_nneigh_ndist_naccess_tenure_other').rename('prob_other')
+
+
+crop = ee.Image('users/mioash/Calderon_etal_Australian_land-cover/Tas_lc2010_tunnedv1_cropland').rename('prob_crop')
+forest = ee.Image('users/mioash/Calderon_etal_Australian_land-cover/Tas_lc2010_tunnedv1_forest').rename('prob_forest')
+grass = ee.Image('users/mioash/Calderon_etal_Australian_land-cover/Tas_lc2010_tunnedv1_grassland').rename('prob_grass')
+urb = ee.Image('users/mioash/Calderon_etal_Australian_land-cover/Tas_lc2010_tunnedv1_urban').rename('prob_urban')
+
+urb1= ee.Image("users/mioash/Calderon_etal_Australian_land-cover/Tas_lc2010_tunnedv1_n67_n27_urban").rename('prob_urban39')
+urb2= ee.Image("users/mioash/Calderon_etal_Australian_land-cover/Tas_lc2010_tunnedv1_n67_urban").rename('prob_urban3927')
+urb3= ee.Image("users/mioash/Calderon_etal_Australian_land-cover/Tas_lc2010_tunnedv1_n67_n27_n9urban").rename('prob_urban3')
+
+
 lc_aus = ee.Image("users/mioash/Calderon_etal_Australian_land-cover/Lc_Aus_1985_2015_v1")
 sgrid = ee.FeatureCollection("users/mioash/drivers_lcaus/boundaries/tasmania_grid_v2302")
 
-probs = crop.addBands(forest).addBands(grass).addBands(urb).addBands(other)
+probs = crop.addBands(forest).addBands(grass).addBands(urb).addBands(urb1).addBands(urb2).addBands(urb3)
 
 
 #probs= probs.multiply(10000000000000000)
@@ -78,7 +90,9 @@ def LatLonImg(img,region):
         fr = np.array((ee.Array(img.get("prob_forest")).getInfo()))#.astype('i4')
         gr= np.array((ee.Array(img.get("prob_grass")).getInfo()))#.astype('i4')
         ur= np.array((ee.Array(img.get("prob_urban")).getInfo()))#.astype('i4')
-        ot= np.array((ee.Array(img.get("prob_other")).getInfo()))#.astype('i4')
+        ur1= np.array((ee.Array(img.get("prob_urban39")).getInfo()))#.astype('i4')
+        ur2= np.array((ee.Array(img.get("prob_urban3927")).getInfo()))#.astype('i4')
+        ur3= np.array((ee.Array(img.get("prob_urban3")).getInfo()))#.astype('i4')
         lprev= np.array((ee.Array(img.get("b2005")).getInfo()))#.astype('i4')
         lpred= np.array((ee.Array(img.get("b2010")).getInfo()))#.astype('i4')
         
@@ -99,7 +113,7 @@ llist = list(range(0,289))
 
 appended = np.zeros([1,10])
 
-for i in range(200,289,1):
+for i in range(0,11,1):
     sgrid1 = sgrid.filterMetadata('id_grid', 'equals',llist[i])
     probs1 = probs.clip(sgrid1)
     limg = LatLonImg(probs1,sgrid1)

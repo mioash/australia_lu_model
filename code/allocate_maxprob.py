@@ -25,10 +25,10 @@ def max_prob_allocator (datafile,column_future):
     #max_index_col = np.argmax(slap[5430:5438,3:7], axis=0)
     
     ##calculate the winner on the columns of interest
-    max_index_row = np.argmax(slap[:,3:7], axis=1)
+    max_index_row = np.argmax(slap[:,3:6], axis=1)
     
     ##append the initial allocated pixels to the array
-    n_df = np.insert(slap, 10, max_index_row, axis=1)
+    n_df = np.insert(slap, np.shape(slap)[1], max_index_row, axis=1)
     
     ##calculate the amount allocated pixels
     LU0_ini = np.sum(n_df[:, column_future+1] == 0) 
@@ -48,9 +48,9 @@ def max_prob_allocator (datafile,column_future):
     neg_d = np.where(diffs < 0)[0]
 
     
-    finn = np.full((0, 11),-9999)
-    discard = np.full((0, 11),-9999)
-    to_append =np.full((0, 11),-9999)
+    finn = np.full((0, 10),-9999)
+    discard = np.full((0, 10),-9999)
+    to_append =np.full((0, 10),-9999)
     
     
     # for i in range(0,len(pos_d)):
@@ -76,7 +76,7 @@ def max_prob_allocator (datafile,column_future):
     #         mdisc1 = mdisc1[mdisc1[:,3+neg_d[i]].argsort()]
     #         mdisc1[len(mdisc1)-abs(diffs[i]):len(mdisc1),10] = neg_d[i]
     #         disc= np.concatenate((disc,mdisc1),axis=0)
-    
+    #breakpoint()
     ## drop the pixels in excess (where the differences were positive) based on the pixels with the highest probability
     for i in range(0,len(pos_d)):
         y1 = n_df[n_df[:,column_future+1] == pos_d[i],:]
@@ -165,7 +165,7 @@ def max_prob_allocator (datafile,column_future):
     ##concatenate all the pervious arrays to build the final df
     df_end= np.concatenate((finn,disc,to_append),axis=0)
     
-    acc = np.sum(df_end[:, 9] == df_end[:, 10]) / df_end.shape[0]
+    acc = np.sum(df_end[:, 8] == df_end[:, 9]) / df_end.shape[0]
     
     print('Accuracy = ', acc)
     

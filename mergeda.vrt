@@ -1,0 +1,2008 @@
+<VRTDataset rasterXSize="60205" rasterYSize="80614">
+  <SRS dataAxisToSRSAxisMapping="2,1">GEOGCS["WGS 84",DATUM["WGS_1984",SPHEROID["WGS 84",6378137,298.257223563,AUTHORITY["EPSG","7030"]],AUTHORITY["EPSG","6326"]],PRIMEM["Greenwich",0],UNIT["degree",0.0174532925199433,AUTHORITY["EPSG","9122"]],AXIS["Latitude",NORTH],AXIS["Longitude",EAST],AUTHORITY["EPSG","4326"]]</SRS>
+  <GeoTransform>  1.1292133040155407e+02,  2.6949458523585528e-04,  0.0000000000000000e+00, -1.3467048666113600e+01,  0.0000000000000000e+00, -2.6949458523585528e-04</GeoTransform>
+  <VRTRasterBand dataType="Byte" band="1">
+    <NoDataValue>255</NoDataValue>
+    <ColorInterp>Gray</ColorInterp>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">E:/Marco/australia_lu_model/data/allocation/wa/2015a\pred_2015_501011001_v3_test_stable.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="3061" RasterYSize="4081" DataType="Byte" BlockXSize="3061" BlockYSize="2" />
+      <SrcRect xOff="0" yOff="0" xSize="3061" ySize="4081" />
+      <DstRect xOff="7143" yOff="74492" xSize="3061" ySize="4081" />
+      <NODATA>255</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">E:/Marco/australia_lu_model/data/allocation/wa/2015a\pred_2015_501011002_v3_test_stable.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="2041" RasterYSize="1020" DataType="Byte" BlockXSize="2041" BlockYSize="4" />
+      <SrcRect xOff="0" yOff="0" xSize="2041" ySize="1020" />
+      <DstRect xOff="8163" yOff="74492" xSize="2041" ySize="1020" />
+      <NODATA>255</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">E:/Marco/australia_lu_model/data/allocation/wa/2015a\pred_2015_501011003_v3_test_stable.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="4081" RasterYSize="3061" DataType="Byte" BlockXSize="4081" BlockYSize="2" />
+      <SrcRect xOff="0" yOff="0" xSize="4081" ySize="3061" />
+      <DstRect xOff="7143" yOff="73471" xSize="4081" ySize="3061" />
+      <NODATA>255</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">E:/Marco/australia_lu_model/data/allocation/wa/2015a\pred_2015_501011004_v3_test_stable.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1020" RasterYSize="1020" DataType="Byte" BlockXSize="1020" BlockYSize="8" />
+      <SrcRect xOff="0" yOff="0" xSize="1020" ySize="1020" />
+      <DstRect xOff="7143" yOff="75512" xSize="1020" ySize="1020" />
+      <NODATA>255</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">E:/Marco/australia_lu_model/data/allocation/wa/2015a\pred_2015_501021005_v3_test_stable.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="2040" RasterYSize="2041" DataType="Byte" BlockXSize="2040" BlockYSize="4" />
+      <SrcRect xOff="0" yOff="0" xSize="2040" ySize="2041" />
+      <DstRect xOff="9184" yOff="72451" xSize="2040" ySize="2041" />
+      <NODATA>255</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">E:/Marco/australia_lu_model/data/allocation/wa/2015a\pred_2015_501021006_v3_test_stable.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1020" RasterYSize="1021" DataType="Byte" BlockXSize="1020" BlockYSize="8" />
+      <SrcRect xOff="0" yOff="0" xSize="1020" ySize="1021" />
+      <DstRect xOff="9184" yOff="73471" xSize="1020" ySize="1021" />
+      <NODATA>255</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">E:/Marco/australia_lu_model/data/allocation/wa/2015a\pred_2015_501021007_v3_test_stable.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="2040" RasterYSize="2041" DataType="Byte" BlockXSize="2040" BlockYSize="4" />
+      <SrcRect xOff="0" yOff="0" xSize="2040" ySize="2041" />
+      <DstRect xOff="9184" yOff="73471" xSize="2040" ySize="2041" />
+      <NODATA>255</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">E:/Marco/australia_lu_model/data/allocation/wa/2015a\pred_2015_501021008_v3_test_stable.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="2040" RasterYSize="1021" DataType="Byte" BlockXSize="2040" BlockYSize="4" />
+      <SrcRect xOff="0" yOff="0" xSize="2040" ySize="1021" />
+      <DstRect xOff="9184" yOff="73471" xSize="2040" ySize="1021" />
+      <NODATA>255</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">E:/Marco/australia_lu_model/data/allocation/wa/2015a\pred_2015_501021009_v3_test_stable.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="3061" RasterYSize="3061" DataType="Byte" BlockXSize="3061" BlockYSize="2" />
+      <SrcRect xOff="0" yOff="0" xSize="3061" ySize="3061" />
+      <DstRect xOff="10204" yOff="72451" xSize="3061" ySize="3061" />
+      <NODATA>255</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">E:/Marco/australia_lu_model/data/allocation/wa/2015a\pred_2015_501021010_v3_test_stable.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="2041" RasterYSize="2041" DataType="Byte" BlockXSize="2041" BlockYSize="4" />
+      <SrcRect xOff="0" yOff="0" xSize="2041" ySize="2041" />
+      <DstRect xOff="10204" yOff="73471" xSize="2041" ySize="2041" />
+      <NODATA>255</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">E:/Marco/australia_lu_model/data/allocation/wa/2015a\pred_2015_501021011_v3_test_stable.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="2040" RasterYSize="1021" DataType="Byte" BlockXSize="2040" BlockYSize="4" />
+      <SrcRect xOff="0" yOff="0" xSize="2040" ySize="1021" />
+      <DstRect xOff="9184" yOff="73471" xSize="2040" ySize="1021" />
+      <NODATA>255</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">E:/Marco/australia_lu_model/data/allocation/wa/2015a\pred_2015_501021012_v3_test_stable.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1020" RasterYSize="1021" DataType="Byte" BlockXSize="1020" BlockYSize="8" />
+      <SrcRect xOff="0" yOff="0" xSize="1020" ySize="1021" />
+      <DstRect xOff="10204" yOff="73471" xSize="1020" ySize="1021" />
+      <NODATA>255</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">E:/Marco/australia_lu_model/data/allocation/wa/2015a\pred_2015_501021013_v3_test_stable.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1020" RasterYSize="1021" DataType="Byte" BlockXSize="1020" BlockYSize="8" />
+      <SrcRect xOff="0" yOff="0" xSize="1020" ySize="1021" />
+      <DstRect xOff="9184" yOff="73471" xSize="1020" ySize="1021" />
+      <NODATA>255</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">E:/Marco/australia_lu_model/data/allocation/wa/2015a\pred_2015_501021014_v3_test_stable.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="3061" RasterYSize="3062" DataType="Byte" BlockXSize="3061" BlockYSize="2" />
+      <SrcRect xOff="0" yOff="0" xSize="3061" ySize="3062" />
+      <DstRect xOff="9184" yOff="71430" xSize="3061" ySize="3062" />
+      <NODATA>255</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">E:/Marco/australia_lu_model/data/allocation/wa/2015a\pred_2015_501021015_v3_test_stable.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="2040" RasterYSize="1021" DataType="Byte" BlockXSize="2040" BlockYSize="4" />
+      <SrcRect xOff="0" yOff="0" xSize="2040" ySize="1021" />
+      <DstRect xOff="9184" yOff="73471" xSize="2040" ySize="1021" />
+      <NODATA>255</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">E:/Marco/australia_lu_model/data/allocation/wa/2015a\pred_2015_501021016_v3_test_stable.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="3061" RasterYSize="1021" DataType="Byte" BlockXSize="3061" BlockYSize="2" />
+      <SrcRect xOff="0" yOff="0" xSize="3061" ySize="1021" />
+      <DstRect xOff="9184" yOff="71430" xSize="3061" ySize="1021" />
+      <NODATA>255</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">E:/Marco/australia_lu_model/data/allocation/wa/2015a\pred_2015_501031017_v3_test_stable.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="5102" RasterYSize="4082" DataType="Byte" BlockXSize="5102" BlockYSize="1" />
+      <SrcRect xOff="0" yOff="0" xSize="5102" ySize="4082" />
+      <DstRect xOff="10204" yOff="73471" xSize="5102" ySize="4082" />
+      <NODATA>255</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">E:/Marco/australia_lu_model/data/allocation/wa/2015a\pred_2015_501031018_v3_test_stable.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="3061" RasterYSize="3061" DataType="Byte" BlockXSize="3061" BlockYSize="2" />
+      <SrcRect xOff="0" yOff="0" xSize="3061" ySize="3061" />
+      <DstRect xOff="10204" yOff="73471" xSize="3061" ySize="3061" />
+      <NODATA>255</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">E:/Marco/australia_lu_model/data/allocation/wa/2015a\pred_2015_501031019_v3_test_stable.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="2041" RasterYSize="1021" DataType="Byte" BlockXSize="2041" BlockYSize="4" />
+      <SrcRect xOff="0" yOff="0" xSize="2041" ySize="1021" />
+      <DstRect xOff="11224" yOff="76532" xSize="2041" ySize="1021" />
+      <NODATA>255</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">E:/Marco/australia_lu_model/data/allocation/wa/2015a\pred_2015_501031020_v3_test_stable.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="7143" RasterYSize="6122" DataType="Byte" BlockXSize="7143" BlockYSize="1" />
+      <SrcRect xOff="0" yOff="0" xSize="7143" ySize="6122" />
+      <DstRect xOff="8163" yOff="74492" xSize="7143" ySize="6122" />
+      <NODATA>255</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">E:/Marco/australia_lu_model/data/allocation/wa/2015a\pred_2015_502011021_v3_test_stable.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="2040" RasterYSize="2041" DataType="Byte" BlockXSize="2040" BlockYSize="4" />
+      <SrcRect xOff="0" yOff="0" xSize="2040" ySize="2041" />
+      <DstRect xOff="9184" yOff="70410" xSize="2040" ySize="2041" />
+      <NODATA>255</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">E:/Marco/australia_lu_model/data/allocation/wa/2015a\pred_2015_502011022_v3_test_stable.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="2040" RasterYSize="1020" DataType="Byte" BlockXSize="2040" BlockYSize="4" />
+      <SrcRect xOff="0" yOff="0" xSize="2040" ySize="1020" />
+      <DstRect xOff="9184" yOff="70410" xSize="2040" ySize="1020" />
+      <NODATA>255</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">E:/Marco/australia_lu_model/data/allocation/wa/2015a\pred_2015_502011023_v3_test_stable.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1020" RasterYSize="1020" DataType="Byte" BlockXSize="1020" BlockYSize="8" />
+      <SrcRect xOff="0" yOff="0" xSize="1020" ySize="1020" />
+      <DstRect xOff="10204" yOff="70410" xSize="1020" ySize="1020" />
+      <NODATA>255</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">E:/Marco/australia_lu_model/data/allocation/wa/2015a\pred_2015_502011024_v3_test_stable.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="2040" RasterYSize="1020" DataType="Byte" BlockXSize="2040" BlockYSize="4" />
+      <SrcRect xOff="0" yOff="0" xSize="2040" ySize="1020" />
+      <DstRect xOff="9184" yOff="70410" xSize="2040" ySize="1020" />
+      <NODATA>255</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">E:/Marco/australia_lu_model/data/allocation/wa/2015a\pred_2015_502011025_v3_test_stable.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1020" RasterYSize="1020" DataType="Byte" BlockXSize="1020" BlockYSize="8" />
+      <SrcRect xOff="0" yOff="0" xSize="1020" ySize="1020" />
+      <DstRect xOff="10204" yOff="70410" xSize="1020" ySize="1020" />
+      <NODATA>255</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">E:/Marco/australia_lu_model/data/allocation/wa/2015a\pred_2015_502011026_v3_test_stable.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1020" RasterYSize="1020" DataType="Byte" BlockXSize="1020" BlockYSize="8" />
+      <SrcRect xOff="0" yOff="0" xSize="1020" ySize="1020" />
+      <DstRect xOff="10204" yOff="70410" xSize="1020" ySize="1020" />
+      <NODATA>255</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">E:/Marco/australia_lu_model/data/allocation/wa/2015a\pred_2015_502011027_v3_test_stable.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1020" RasterYSize="1020" DataType="Byte" BlockXSize="1020" BlockYSize="8" />
+      <SrcRect xOff="0" yOff="0" xSize="1020" ySize="1020" />
+      <DstRect xOff="10204" yOff="70410" xSize="1020" ySize="1020" />
+      <NODATA>255</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">E:/Marco/australia_lu_model/data/allocation/wa/2015a\pred_2015_502011028_v3_test_stable.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1020" RasterYSize="1020" DataType="Byte" BlockXSize="1020" BlockYSize="8" />
+      <SrcRect xOff="0" yOff="0" xSize="1020" ySize="1020" />
+      <DstRect xOff="10204" yOff="70410" xSize="1020" ySize="1020" />
+      <NODATA>255</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">E:/Marco/australia_lu_model/data/allocation/wa/2015a\pred_2015_502011029_v3_test_stable.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="3061" RasterYSize="2041" DataType="Byte" BlockXSize="3061" BlockYSize="2" />
+      <SrcRect xOff="0" yOff="0" xSize="3061" ySize="2041" />
+      <DstRect xOff="9184" yOff="70410" xSize="3061" ySize="2041" />
+      <NODATA>255</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">E:/Marco/australia_lu_model/data/allocation/wa/2015a\pred_2015_503011030_v3_test_stable.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1020" RasterYSize="1020" DataType="Byte" BlockXSize="1020" BlockYSize="8" />
+      <SrcRect xOff="0" yOff="0" xSize="1020" ySize="1020" />
+      <DstRect xOff="10204" yOff="68369" xSize="1020" ySize="1020" />
+      <NODATA>255</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">E:/Marco/australia_lu_model/data/allocation/wa/2015a\pred_2015_503011031_v3_test_stable.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1020" RasterYSize="1020" DataType="Byte" BlockXSize="1020" BlockYSize="8" />
+      <SrcRect xOff="0" yOff="0" xSize="1020" ySize="1020" />
+      <DstRect xOff="10204" yOff="68369" xSize="1020" ySize="1020" />
+      <NODATA>255</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">E:/Marco/australia_lu_model/data/allocation/wa/2015a\pred_2015_503011032_v3_test_stable.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1020" RasterYSize="1020" DataType="Byte" BlockXSize="1020" BlockYSize="8" />
+      <SrcRect xOff="0" yOff="0" xSize="1020" ySize="1020" />
+      <DstRect xOff="10204" yOff="68369" xSize="1020" ySize="1020" />
+      <NODATA>255</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">E:/Marco/australia_lu_model/data/allocation/wa/2015a\pred_2015_503011033_v3_test_stable.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1020" RasterYSize="1020" DataType="Byte" BlockXSize="1020" BlockYSize="8" />
+      <SrcRect xOff="0" yOff="0" xSize="1020" ySize="1020" />
+      <DstRect xOff="10204" yOff="68369" xSize="1020" ySize="1020" />
+      <NODATA>255</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">E:/Marco/australia_lu_model/data/allocation/wa/2015a\pred_2015_503011034_v3_test_stable.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1020" RasterYSize="1020" DataType="Byte" BlockXSize="1020" BlockYSize="8" />
+      <SrcRect xOff="0" yOff="0" xSize="1020" ySize="1020" />
+      <DstRect xOff="10204" yOff="68369" xSize="1020" ySize="1020" />
+      <NODATA>255</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">E:/Marco/australia_lu_model/data/allocation/wa/2015a\pred_2015_503011035_v3_test_stable.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1020" RasterYSize="1020" DataType="Byte" BlockXSize="1020" BlockYSize="8" />
+      <SrcRect xOff="0" yOff="0" xSize="1020" ySize="1020" />
+      <DstRect xOff="10204" yOff="68369" xSize="1020" ySize="1020" />
+      <NODATA>255</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">E:/Marco/australia_lu_model/data/allocation/wa/2015a\pred_2015_503011036_v3_test_stable.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1020" RasterYSize="1020" DataType="Byte" BlockXSize="1020" BlockYSize="8" />
+      <SrcRect xOff="0" yOff="0" xSize="1020" ySize="1020" />
+      <DstRect xOff="10204" yOff="68369" xSize="1020" ySize="1020" />
+      <NODATA>255</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">E:/Marco/australia_lu_model/data/allocation/wa/2015a\pred_2015_503021037_v3_test_stable.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1020" RasterYSize="1020" DataType="Byte" BlockXSize="1020" BlockYSize="8" />
+      <SrcRect xOff="0" yOff="0" xSize="1020" ySize="1020" />
+      <DstRect xOff="10204" yOff="68369" xSize="1020" ySize="1020" />
+      <NODATA>255</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">E:/Marco/australia_lu_model/data/allocation/wa/2015a\pred_2015_503021038_v3_test_stable.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1020" RasterYSize="1020" DataType="Byte" BlockXSize="1020" BlockYSize="8" />
+      <SrcRect xOff="0" yOff="0" xSize="1020" ySize="1020" />
+      <DstRect xOff="10204" yOff="68369" xSize="1020" ySize="1020" />
+      <NODATA>255</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">E:/Marco/australia_lu_model/data/allocation/wa/2015a\pred_2015_503021039_v3_test_stable.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1020" RasterYSize="1020" DataType="Byte" BlockXSize="1020" BlockYSize="8" />
+      <SrcRect xOff="0" yOff="0" xSize="1020" ySize="1020" />
+      <DstRect xOff="10204" yOff="68369" xSize="1020" ySize="1020" />
+      <NODATA>255</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">E:/Marco/australia_lu_model/data/allocation/wa/2015a\pred_2015_503021040_v3_test_stable.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1020" RasterYSize="1020" DataType="Byte" BlockXSize="1020" BlockYSize="8" />
+      <SrcRect xOff="0" yOff="0" xSize="1020" ySize="1020" />
+      <DstRect xOff="10204" yOff="68369" xSize="1020" ySize="1020" />
+      <NODATA>255</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">E:/Marco/australia_lu_model/data/allocation/wa/2015a\pred_2015_503021041_v3_test_stable.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1020" RasterYSize="1020" DataType="Byte" BlockXSize="1020" BlockYSize="8" />
+      <SrcRect xOff="0" yOff="0" xSize="1020" ySize="1020" />
+      <DstRect xOff="10204" yOff="68369" xSize="1020" ySize="1020" />
+      <NODATA>255</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">E:/Marco/australia_lu_model/data/allocation/wa/2015a\pred_2015_503021042_v3_test_stable.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1020" RasterYSize="1020" DataType="Byte" BlockXSize="1020" BlockYSize="8" />
+      <SrcRect xOff="0" yOff="0" xSize="1020" ySize="1020" />
+      <DstRect xOff="10204" yOff="68369" xSize="1020" ySize="1020" />
+      <NODATA>255</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">E:/Marco/australia_lu_model/data/allocation/wa/2015a\pred_2015_503021043_v3_test_stable.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1020" RasterYSize="1020" DataType="Byte" BlockXSize="1020" BlockYSize="8" />
+      <SrcRect xOff="0" yOff="0" xSize="1020" ySize="1020" />
+      <DstRect xOff="10204" yOff="68369" xSize="1020" ySize="1020" />
+      <NODATA>255</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">E:/Marco/australia_lu_model/data/allocation/wa/2015a\pred_2015_504011044_v3_test_stable.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="2041" RasterYSize="2040" DataType="Byte" BlockXSize="2041" BlockYSize="4" />
+      <SrcRect xOff="0" yOff="0" xSize="2041" ySize="2040" />
+      <DstRect xOff="10204" yOff="67349" xSize="2041" ySize="2040" />
+      <NODATA>255</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">E:/Marco/australia_lu_model/data/allocation/wa/2015a\pred_2015_504011045_v3_test_stable.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1020" RasterYSize="1020" DataType="Byte" BlockXSize="1020" BlockYSize="8" />
+      <SrcRect xOff="0" yOff="0" xSize="1020" ySize="1020" />
+      <DstRect xOff="10204" yOff="68369" xSize="1020" ySize="1020" />
+      <NODATA>255</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">E:/Marco/australia_lu_model/data/allocation/wa/2015a\pred_2015_504011046_v3_test_stable.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1020" RasterYSize="1020" DataType="Byte" BlockXSize="1020" BlockYSize="8" />
+      <SrcRect xOff="0" yOff="0" xSize="1020" ySize="1020" />
+      <DstRect xOff="10204" yOff="68369" xSize="1020" ySize="1020" />
+      <NODATA>255</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">E:/Marco/australia_lu_model/data/allocation/wa/2015a\pred_2015_504011047_v3_test_stable.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1020" RasterYSize="2040" DataType="Byte" BlockXSize="1020" BlockYSize="8" />
+      <SrcRect xOff="0" yOff="0" xSize="1020" ySize="2040" />
+      <DstRect xOff="10204" yOff="67349" xSize="1020" ySize="2040" />
+      <NODATA>255</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">E:/Marco/australia_lu_model/data/allocation/wa/2015a\pred_2015_504011048_v3_test_stable.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1020" RasterYSize="1020" DataType="Byte" BlockXSize="1020" BlockYSize="8" />
+      <SrcRect xOff="0" yOff="0" xSize="1020" ySize="1020" />
+      <DstRect xOff="10204" yOff="67349" xSize="1020" ySize="1020" />
+      <NODATA>255</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">E:/Marco/australia_lu_model/data/allocation/wa/2015a\pred_2015_504021049_v3_test_stable.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1020" RasterYSize="2040" DataType="Byte" BlockXSize="1020" BlockYSize="8" />
+      <SrcRect xOff="0" yOff="0" xSize="1020" ySize="2040" />
+      <DstRect xOff="12245" yOff="67349" xSize="1020" ySize="2040" />
+      <NODATA>255</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">E:/Marco/australia_lu_model/data/allocation/wa/2015a\pred_2015_504021050_v3_test_stable.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1021" RasterYSize="2040" DataType="Byte" BlockXSize="1021" BlockYSize="8" />
+      <SrcRect xOff="0" yOff="0" xSize="1021" ySize="2040" />
+      <DstRect xOff="11224" yOff="67349" xSize="1021" ySize="2040" />
+      <NODATA>255</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">E:/Marco/australia_lu_model/data/allocation/wa/2015a\pred_2015_504021051_v3_test_stable.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1021" RasterYSize="1020" DataType="Byte" BlockXSize="1021" BlockYSize="8" />
+      <SrcRect xOff="0" yOff="0" xSize="1021" ySize="1020" />
+      <DstRect xOff="11224" yOff="68369" xSize="1021" ySize="1020" />
+      <NODATA>255</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">E:/Marco/australia_lu_model/data/allocation/wa/2015a\pred_2015_504021052_v3_test_stable.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="2041" RasterYSize="2040" DataType="Byte" BlockXSize="2041" BlockYSize="4" />
+      <SrcRect xOff="0" yOff="0" xSize="2041" ySize="2040" />
+      <DstRect xOff="11224" yOff="67349" xSize="2041" ySize="2040" />
+      <NODATA>255</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">E:/Marco/australia_lu_model/data/allocation/wa/2015a\pred_2015_504021053_v3_test_stable.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="2041" RasterYSize="2040" DataType="Byte" BlockXSize="2041" BlockYSize="4" />
+      <SrcRect xOff="0" yOff="0" xSize="2041" ySize="2040" />
+      <DstRect xOff="11224" yOff="67349" xSize="2041" ySize="2040" />
+      <NODATA>255</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">E:/Marco/australia_lu_model/data/allocation/wa/2015a\pred_2015_504021054_v3_test_stable.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1021" RasterYSize="2040" DataType="Byte" BlockXSize="1021" BlockYSize="8" />
+      <SrcRect xOff="0" yOff="0" xSize="1021" ySize="2040" />
+      <DstRect xOff="11224" yOff="67349" xSize="1021" ySize="2040" />
+      <NODATA>255</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">E:/Marco/australia_lu_model/data/allocation/wa/2015a\pred_2015_504031055_v3_test_stable.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="2041" RasterYSize="2041" DataType="Byte" BlockXSize="2041" BlockYSize="4" />
+      <SrcRect xOff="0" yOff="0" xSize="2041" ySize="2041" />
+      <DstRect xOff="11224" yOff="66328" xSize="2041" ySize="2041" />
+      <NODATA>255</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">E:/Marco/australia_lu_model/data/allocation/wa/2015a\pred_2015_504031056_v3_test_stable.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1020" RasterYSize="1020" DataType="Byte" BlockXSize="1020" BlockYSize="8" />
+      <SrcRect xOff="0" yOff="0" xSize="1020" ySize="1020" />
+      <DstRect xOff="10204" yOff="67349" xSize="1020" ySize="1020" />
+      <NODATA>255</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">E:/Marco/australia_lu_model/data/allocation/wa/2015a\pred_2015_504031057_v3_test_stable.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="2041" RasterYSize="1020" DataType="Byte" BlockXSize="2041" BlockYSize="4" />
+      <SrcRect xOff="0" yOff="0" xSize="2041" ySize="1020" />
+      <DstRect xOff="10204" yOff="67349" xSize="2041" ySize="1020" />
+      <NODATA>255</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">E:/Marco/australia_lu_model/data/allocation/wa/2015a\pred_2015_504031058_v3_test_stable.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="2041" RasterYSize="2041" DataType="Byte" BlockXSize="2041" BlockYSize="4" />
+      <SrcRect xOff="0" yOff="0" xSize="2041" ySize="2041" />
+      <DstRect xOff="10204" yOff="66328" xSize="2041" ySize="2041" />
+      <NODATA>255</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">E:/Marco/australia_lu_model/data/allocation/wa/2015a\pred_2015_504031059_v3_test_stable.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1021" RasterYSize="1020" DataType="Byte" BlockXSize="1021" BlockYSize="8" />
+      <SrcRect xOff="0" yOff="0" xSize="1021" ySize="1020" />
+      <DstRect xOff="11224" yOff="67349" xSize="1021" ySize="1020" />
+      <NODATA>255</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">E:/Marco/australia_lu_model/data/allocation/wa/2015a\pred_2015_504031060_v3_test_stable.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="2041" RasterYSize="1020" DataType="Byte" BlockXSize="2041" BlockYSize="4" />
+      <SrcRect xOff="0" yOff="0" xSize="2041" ySize="1020" />
+      <DstRect xOff="11224" yOff="67349" xSize="2041" ySize="1020" />
+      <NODATA>255</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">E:/Marco/australia_lu_model/data/allocation/wa/2015a\pred_2015_504031061_v3_test_stable.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1021" RasterYSize="1020" DataType="Byte" BlockXSize="1021" BlockYSize="8" />
+      <SrcRect xOff="0" yOff="0" xSize="1021" ySize="1020" />
+      <DstRect xOff="11224" yOff="68369" xSize="1021" ySize="1020" />
+      <NODATA>255</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">E:/Marco/australia_lu_model/data/allocation/wa/2015a\pred_2015_504031062_v3_test_stable.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="2041" RasterYSize="2040" DataType="Byte" BlockXSize="2041" BlockYSize="4" />
+      <SrcRect xOff="0" yOff="0" xSize="2041" ySize="2040" />
+      <DstRect xOff="10204" yOff="67349" xSize="2041" ySize="2040" />
+      <NODATA>255</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">E:/Marco/australia_lu_model/data/allocation/wa/2015a\pred_2015_504031063_v3_test_stable.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1020" RasterYSize="1020" DataType="Byte" BlockXSize="1020" BlockYSize="8" />
+      <SrcRect xOff="0" yOff="0" xSize="1020" ySize="1020" />
+      <DstRect xOff="10204" yOff="67349" xSize="1020" ySize="1020" />
+      <NODATA>255</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">E:/Marco/australia_lu_model/data/allocation/wa/2015a\pred_2015_504031064_v3_test_stable.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="2041" RasterYSize="1020" DataType="Byte" BlockXSize="2041" BlockYSize="4" />
+      <SrcRect xOff="0" yOff="0" xSize="2041" ySize="1020" />
+      <DstRect xOff="10204" yOff="67349" xSize="2041" ySize="1020" />
+      <NODATA>255</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">E:/Marco/australia_lu_model/data/allocation/wa/2015a\pred_2015_504031065_v3_test_stable.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1021" RasterYSize="1020" DataType="Byte" BlockXSize="1021" BlockYSize="8" />
+      <SrcRect xOff="0" yOff="0" xSize="1021" ySize="1020" />
+      <DstRect xOff="11224" yOff="67349" xSize="1021" ySize="1020" />
+      <NODATA>255</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">E:/Marco/australia_lu_model/data/allocation/wa/2015a\pred_2015_504031066_v3_test_stable.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1021" RasterYSize="2040" DataType="Byte" BlockXSize="1021" BlockYSize="8" />
+      <SrcRect xOff="0" yOff="0" xSize="1021" ySize="2040" />
+      <DstRect xOff="11224" yOff="67349" xSize="1021" ySize="2040" />
+      <NODATA>255</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">E:/Marco/australia_lu_model/data/allocation/wa/2015a\pred_2015_504031067_v3_test_stable.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1021" RasterYSize="1020" DataType="Byte" BlockXSize="1021" BlockYSize="8" />
+      <SrcRect xOff="0" yOff="0" xSize="1021" ySize="1020" />
+      <DstRect xOff="11224" yOff="67349" xSize="1021" ySize="1020" />
+      <NODATA>255</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">E:/Marco/australia_lu_model/data/allocation/wa/2015a\pred_2015_504031068_v3_test_stable.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1021" RasterYSize="1020" DataType="Byte" BlockXSize="1021" BlockYSize="8" />
+      <SrcRect xOff="0" yOff="0" xSize="1021" ySize="1020" />
+      <DstRect xOff="11224" yOff="67349" xSize="1021" ySize="1020" />
+      <NODATA>255</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">E:/Marco/australia_lu_model/data/allocation/wa/2015a\pred_2015_504031069_v3_test_stable.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1021" RasterYSize="1020" DataType="Byte" BlockXSize="1021" BlockYSize="8" />
+      <SrcRect xOff="0" yOff="0" xSize="1021" ySize="1020" />
+      <DstRect xOff="11224" yOff="67349" xSize="1021" ySize="1020" />
+      <NODATA>255</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">E:/Marco/australia_lu_model/data/allocation/wa/2015a\pred_2015_505011070_v3_test_stable.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1020" RasterYSize="1020" DataType="Byte" BlockXSize="1020" BlockYSize="8" />
+      <SrcRect xOff="0" yOff="0" xSize="1020" ySize="1020" />
+      <DstRect xOff="10204" yOff="67349" xSize="1020" ySize="1020" />
+      <NODATA>255</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">E:/Marco/australia_lu_model/data/allocation/wa/2015a\pred_2015_505011071_v3_test_stable.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1020" RasterYSize="1020" DataType="Byte" BlockXSize="1020" BlockYSize="8" />
+      <SrcRect xOff="0" yOff="0" xSize="1020" ySize="1020" />
+      <DstRect xOff="10204" yOff="67349" xSize="1020" ySize="1020" />
+      <NODATA>255</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">E:/Marco/australia_lu_model/data/allocation/wa/2015a\pred_2015_505011072_v3_test_stable.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1020" RasterYSize="1020" DataType="Byte" BlockXSize="1020" BlockYSize="8" />
+      <SrcRect xOff="0" yOff="0" xSize="1020" ySize="1020" />
+      <DstRect xOff="10204" yOff="67349" xSize="1020" ySize="1020" />
+      <NODATA>255</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">E:/Marco/australia_lu_model/data/allocation/wa/2015a\pred_2015_505011073_v3_test_stable.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1020" RasterYSize="1020" DataType="Byte" BlockXSize="1020" BlockYSize="8" />
+      <SrcRect xOff="0" yOff="0" xSize="1020" ySize="1020" />
+      <DstRect xOff="10204" yOff="67349" xSize="1020" ySize="1020" />
+      <NODATA>255</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">E:/Marco/australia_lu_model/data/allocation/wa/2015a\pred_2015_505011074_v3_test_stable.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1020" RasterYSize="1020" DataType="Byte" BlockXSize="1020" BlockYSize="8" />
+      <SrcRect xOff="0" yOff="0" xSize="1020" ySize="1020" />
+      <DstRect xOff="10204" yOff="67349" xSize="1020" ySize="1020" />
+      <NODATA>255</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">E:/Marco/australia_lu_model/data/allocation/wa/2015a\pred_2015_505011075_v3_test_stable.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1020" RasterYSize="1020" DataType="Byte" BlockXSize="1020" BlockYSize="8" />
+      <SrcRect xOff="0" yOff="0" xSize="1020" ySize="1020" />
+      <DstRect xOff="10204" yOff="67349" xSize="1020" ySize="1020" />
+      <NODATA>255</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">E:/Marco/australia_lu_model/data/allocation/wa/2015a\pred_2015_505011076_v3_test_stable.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1020" RasterYSize="1020" DataType="Byte" BlockXSize="1020" BlockYSize="8" />
+      <SrcRect xOff="0" yOff="0" xSize="1020" ySize="1020" />
+      <DstRect xOff="10204" yOff="67349" xSize="1020" ySize="1020" />
+      <NODATA>255</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">E:/Marco/australia_lu_model/data/allocation/wa/2015a\pred_2015_505011077_v3_test_stable.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1020" RasterYSize="1020" DataType="Byte" BlockXSize="1020" BlockYSize="8" />
+      <SrcRect xOff="0" yOff="0" xSize="1020" ySize="1020" />
+      <DstRect xOff="10204" yOff="67349" xSize="1020" ySize="1020" />
+      <NODATA>255</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">E:/Marco/australia_lu_model/data/allocation/wa/2015a\pred_2015_505011078_v3_test_stable.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1020" RasterYSize="1020" DataType="Byte" BlockXSize="1020" BlockYSize="8" />
+      <SrcRect xOff="0" yOff="0" xSize="1020" ySize="1020" />
+      <DstRect xOff="10204" yOff="67349" xSize="1020" ySize="1020" />
+      <NODATA>255</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">E:/Marco/australia_lu_model/data/allocation/wa/2015a\pred_2015_505011079_v3_test_stable.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1020" RasterYSize="1020" DataType="Byte" BlockXSize="1020" BlockYSize="8" />
+      <SrcRect xOff="0" yOff="0" xSize="1020" ySize="1020" />
+      <DstRect xOff="10204" yOff="67349" xSize="1020" ySize="1020" />
+      <NODATA>255</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">E:/Marco/australia_lu_model/data/allocation/wa/2015a\pred_2015_505011080_v3_test_stable.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1020" RasterYSize="1020" DataType="Byte" BlockXSize="1020" BlockYSize="8" />
+      <SrcRect xOff="0" yOff="0" xSize="1020" ySize="1020" />
+      <DstRect xOff="10204" yOff="67349" xSize="1020" ySize="1020" />
+      <NODATA>255</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">E:/Marco/australia_lu_model/data/allocation/wa/2015a\pred_2015_505011081_v3_test_stable.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1020" RasterYSize="1020" DataType="Byte" BlockXSize="1020" BlockYSize="8" />
+      <SrcRect xOff="0" yOff="0" xSize="1020" ySize="1020" />
+      <DstRect xOff="10204" yOff="67349" xSize="1020" ySize="1020" />
+      <NODATA>255</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">E:/Marco/australia_lu_model/data/allocation/wa/2015a\pred_2015_505011082_v3_test_stable.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1020" RasterYSize="1020" DataType="Byte" BlockXSize="1020" BlockYSize="8" />
+      <SrcRect xOff="0" yOff="0" xSize="1020" ySize="1020" />
+      <DstRect xOff="10204" yOff="67349" xSize="1020" ySize="1020" />
+      <NODATA>255</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">E:/Marco/australia_lu_model/data/allocation/wa/2015a\pred_2015_505011083_v3_test_stable.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1020" RasterYSize="1020" DataType="Byte" BlockXSize="1020" BlockYSize="8" />
+      <SrcRect xOff="0" yOff="0" xSize="1020" ySize="1020" />
+      <DstRect xOff="10204" yOff="67349" xSize="1020" ySize="1020" />
+      <NODATA>255</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">E:/Marco/australia_lu_model/data/allocation/wa/2015a\pred_2015_505021084_v3_test_stable.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1020" RasterYSize="1020" DataType="Byte" BlockXSize="1020" BlockYSize="8" />
+      <SrcRect xOff="0" yOff="0" xSize="1020" ySize="1020" />
+      <DstRect xOff="10204" yOff="67349" xSize="1020" ySize="1020" />
+      <NODATA>255</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">E:/Marco/australia_lu_model/data/allocation/wa/2015a\pred_2015_505021085_v3_test_stable.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1020" RasterYSize="1020" DataType="Byte" BlockXSize="1020" BlockYSize="8" />
+      <SrcRect xOff="0" yOff="0" xSize="1020" ySize="1020" />
+      <DstRect xOff="10204" yOff="67349" xSize="1020" ySize="1020" />
+      <NODATA>255</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">E:/Marco/australia_lu_model/data/allocation/wa/2015a\pred_2015_505021086_v3_test_stable.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1020" RasterYSize="2040" DataType="Byte" BlockXSize="1020" BlockYSize="8" />
+      <SrcRect xOff="0" yOff="0" xSize="1020" ySize="2040" />
+      <DstRect xOff="10204" yOff="67349" xSize="1020" ySize="2040" />
+      <NODATA>255</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">E:/Marco/australia_lu_model/data/allocation/wa/2015a\pred_2015_505021087_v3_test_stable.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1020" RasterYSize="1020" DataType="Byte" BlockXSize="1020" BlockYSize="8" />
+      <SrcRect xOff="0" yOff="0" xSize="1020" ySize="1020" />
+      <DstRect xOff="10204" yOff="68369" xSize="1020" ySize="1020" />
+      <NODATA>255</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">E:/Marco/australia_lu_model/data/allocation/wa/2015a\pred_2015_505021088_v3_test_stable.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1020" RasterYSize="2040" DataType="Byte" BlockXSize="1020" BlockYSize="8" />
+      <SrcRect xOff="0" yOff="0" xSize="1020" ySize="2040" />
+      <DstRect xOff="10204" yOff="67349" xSize="1020" ySize="2040" />
+      <NODATA>255</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">E:/Marco/australia_lu_model/data/allocation/wa/2015a\pred_2015_505021089_v3_test_stable.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1020" RasterYSize="1020" DataType="Byte" BlockXSize="1020" BlockYSize="8" />
+      <SrcRect xOff="0" yOff="0" xSize="1020" ySize="1020" />
+      <DstRect xOff="10204" yOff="67349" xSize="1020" ySize="1020" />
+      <NODATA>255</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">E:/Marco/australia_lu_model/data/allocation/wa/2015a\pred_2015_505021090_v3_test_stable.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1020" RasterYSize="1020" DataType="Byte" BlockXSize="1020" BlockYSize="8" />
+      <SrcRect xOff="0" yOff="0" xSize="1020" ySize="1020" />
+      <DstRect xOff="10204" yOff="67349" xSize="1020" ySize="1020" />
+      <NODATA>255</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">E:/Marco/australia_lu_model/data/allocation/wa/2015a\pred_2015_505021091_v3_test_stable.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1020" RasterYSize="1020" DataType="Byte" BlockXSize="1020" BlockYSize="8" />
+      <SrcRect xOff="0" yOff="0" xSize="1020" ySize="1020" />
+      <DstRect xOff="10204" yOff="68369" xSize="1020" ySize="1020" />
+      <NODATA>255</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">E:/Marco/australia_lu_model/data/allocation/wa/2015a\pred_2015_505021092_v3_test_stable.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1020" RasterYSize="2040" DataType="Byte" BlockXSize="1020" BlockYSize="8" />
+      <SrcRect xOff="0" yOff="0" xSize="1020" ySize="2040" />
+      <DstRect xOff="10204" yOff="67349" xSize="1020" ySize="2040" />
+      <NODATA>255</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">E:/Marco/australia_lu_model/data/allocation/wa/2015a\pred_2015_505021093_v3_test_stable.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1020" RasterYSize="2040" DataType="Byte" BlockXSize="1020" BlockYSize="8" />
+      <SrcRect xOff="0" yOff="0" xSize="1020" ySize="2040" />
+      <DstRect xOff="10204" yOff="67349" xSize="1020" ySize="2040" />
+      <NODATA>255</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">E:/Marco/australia_lu_model/data/allocation/wa/2015a\pred_2015_505021094_v3_test_stable.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1020" RasterYSize="1020" DataType="Byte" BlockXSize="1020" BlockYSize="8" />
+      <SrcRect xOff="0" yOff="0" xSize="1020" ySize="1020" />
+      <DstRect xOff="10204" yOff="67349" xSize="1020" ySize="1020" />
+      <NODATA>255</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">E:/Marco/australia_lu_model/data/allocation/wa/2015a\pred_2015_505021095_v3_test_stable.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1020" RasterYSize="2040" DataType="Byte" BlockXSize="1020" BlockYSize="8" />
+      <SrcRect xOff="0" yOff="0" xSize="1020" ySize="2040" />
+      <DstRect xOff="10204" yOff="67349" xSize="1020" ySize="2040" />
+      <NODATA>255</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">E:/Marco/australia_lu_model/data/allocation/wa/2015a\pred_2015_505021096_v3_test_stable.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1020" RasterYSize="1020" DataType="Byte" BlockXSize="1020" BlockYSize="8" />
+      <SrcRect xOff="0" yOff="0" xSize="1020" ySize="1020" />
+      <DstRect xOff="10204" yOff="68369" xSize="1020" ySize="1020" />
+      <NODATA>255</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">E:/Marco/australia_lu_model/data/allocation/wa/2015a\pred_2015_505021097_v3_test_stable.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1020" RasterYSize="2040" DataType="Byte" BlockXSize="1020" BlockYSize="8" />
+      <SrcRect xOff="0" yOff="0" xSize="1020" ySize="2040" />
+      <DstRect xOff="10204" yOff="67349" xSize="1020" ySize="2040" />
+      <NODATA>255</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">E:/Marco/australia_lu_model/data/allocation/wa/2015a\pred_2015_505031098_v3_test_stable.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1020" RasterYSize="1020" DataType="Byte" BlockXSize="1020" BlockYSize="8" />
+      <SrcRect xOff="0" yOff="0" xSize="1020" ySize="1020" />
+      <DstRect xOff="10204" yOff="67349" xSize="1020" ySize="1020" />
+      <NODATA>255</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">E:/Marco/australia_lu_model/data/allocation/wa/2015a\pred_2015_505031099_v3_test_stable.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1020" RasterYSize="1020" DataType="Byte" BlockXSize="1020" BlockYSize="8" />
+      <SrcRect xOff="0" yOff="0" xSize="1020" ySize="1020" />
+      <DstRect xOff="10204" yOff="67349" xSize="1020" ySize="1020" />
+      <NODATA>255</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">E:/Marco/australia_lu_model/data/allocation/wa/2015a\pred_2015_505031100_v3_test_stable.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1020" RasterYSize="1020" DataType="Byte" BlockXSize="1020" BlockYSize="8" />
+      <SrcRect xOff="0" yOff="0" xSize="1020" ySize="1020" />
+      <DstRect xOff="10204" yOff="67349" xSize="1020" ySize="1020" />
+      <NODATA>255</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">E:/Marco/australia_lu_model/data/allocation/wa/2015a\pred_2015_505031101_v3_test_stable.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1020" RasterYSize="1020" DataType="Byte" BlockXSize="1020" BlockYSize="8" />
+      <SrcRect xOff="0" yOff="0" xSize="1020" ySize="1020" />
+      <DstRect xOff="10204" yOff="67349" xSize="1020" ySize="1020" />
+      <NODATA>255</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">E:/Marco/australia_lu_model/data/allocation/wa/2015a\pred_2015_505031102_v3_test_stable.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1020" RasterYSize="1020" DataType="Byte" BlockXSize="1020" BlockYSize="8" />
+      <SrcRect xOff="0" yOff="0" xSize="1020" ySize="1020" />
+      <DstRect xOff="10204" yOff="67349" xSize="1020" ySize="1020" />
+      <NODATA>255</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">E:/Marco/australia_lu_model/data/allocation/wa/2015a\pred_2015_505031103_v3_test_stable.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1020" RasterYSize="1020" DataType="Byte" BlockXSize="1020" BlockYSize="8" />
+      <SrcRect xOff="0" yOff="0" xSize="1020" ySize="1020" />
+      <DstRect xOff="10204" yOff="67349" xSize="1020" ySize="1020" />
+      <NODATA>255</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">E:/Marco/australia_lu_model/data/allocation/wa/2015a\pred_2015_505031104_v3_test_stable.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1020" RasterYSize="1020" DataType="Byte" BlockXSize="1020" BlockYSize="8" />
+      <SrcRect xOff="0" yOff="0" xSize="1020" ySize="1020" />
+      <DstRect xOff="10204" yOff="67349" xSize="1020" ySize="1020" />
+      <NODATA>255</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">E:/Marco/australia_lu_model/data/allocation/wa/2015a\pred_2015_505031105_v3_test_stable.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="2040" RasterYSize="1020" DataType="Byte" BlockXSize="2040" BlockYSize="4" />
+      <SrcRect xOff="0" yOff="0" xSize="2040" ySize="1020" />
+      <DstRect xOff="9184" yOff="67349" xSize="2040" ySize="1020" />
+      <NODATA>255</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">E:/Marco/australia_lu_model/data/allocation/wa/2015a\pred_2015_505031106_v3_test_stable.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1020" RasterYSize="1020" DataType="Byte" BlockXSize="1020" BlockYSize="8" />
+      <SrcRect xOff="0" yOff="0" xSize="1020" ySize="1020" />
+      <DstRect xOff="10204" yOff="67349" xSize="1020" ySize="1020" />
+      <NODATA>255</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">E:/Marco/australia_lu_model/data/allocation/wa/2015a\pred_2015_505031107_v3_test_stable.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1020" RasterYSize="1020" DataType="Byte" BlockXSize="1020" BlockYSize="8" />
+      <SrcRect xOff="0" yOff="0" xSize="1020" ySize="1020" />
+      <DstRect xOff="10204" yOff="67349" xSize="1020" ySize="1020" />
+      <NODATA>255</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">E:/Marco/australia_lu_model/data/allocation/wa/2015a\pred_2015_505031108_v3_test_stable.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1020" RasterYSize="1020" DataType="Byte" BlockXSize="1020" BlockYSize="8" />
+      <SrcRect xOff="0" yOff="0" xSize="1020" ySize="1020" />
+      <DstRect xOff="10204" yOff="67349" xSize="1020" ySize="1020" />
+      <NODATA>255</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">E:/Marco/australia_lu_model/data/allocation/wa/2015a\pred_2015_505031109_v3_test_stable.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="2040" RasterYSize="2041" DataType="Byte" BlockXSize="2040" BlockYSize="4" />
+      <SrcRect xOff="0" yOff="0" xSize="2040" ySize="2041" />
+      <DstRect xOff="9184" yOff="66328" xSize="2040" ySize="2041" />
+      <NODATA>255</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">E:/Marco/australia_lu_model/data/allocation/wa/2015a\pred_2015_506011110_v3_test_stable.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1021" RasterYSize="2041" DataType="Byte" BlockXSize="1021" BlockYSize="8" />
+      <SrcRect xOff="0" yOff="0" xSize="1021" ySize="2041" />
+      <DstRect xOff="11224" yOff="68369" xSize="1021" ySize="2041" />
+      <NODATA>255</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">E:/Marco/australia_lu_model/data/allocation/wa/2015a\pred_2015_506011111_v3_test_stable.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="2041" RasterYSize="2041" DataType="Byte" BlockXSize="2041" BlockYSize="4" />
+      <SrcRect xOff="0" yOff="0" xSize="2041" ySize="2041" />
+      <DstRect xOff="11224" yOff="68369" xSize="2041" ySize="2041" />
+      <NODATA>255</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">E:/Marco/australia_lu_model/data/allocation/wa/2015a\pred_2015_506011112_v3_test_stable.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1021" RasterYSize="1020" DataType="Byte" BlockXSize="1021" BlockYSize="8" />
+      <SrcRect xOff="0" yOff="0" xSize="1021" ySize="1020" />
+      <DstRect xOff="11224" yOff="68369" xSize="1021" ySize="1020" />
+      <NODATA>255</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">E:/Marco/australia_lu_model/data/allocation/wa/2015a\pred_2015_506011113_v3_test_stable.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="2041" RasterYSize="2041" DataType="Byte" BlockXSize="2041" BlockYSize="4" />
+      <SrcRect xOff="0" yOff="0" xSize="2041" ySize="2041" />
+      <DstRect xOff="10204" yOff="68369" xSize="2041" ySize="2041" />
+      <NODATA>255</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">E:/Marco/australia_lu_model/data/allocation/wa/2015a\pred_2015_506011114_v3_test_stable.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1021" RasterYSize="1020" DataType="Byte" BlockXSize="1021" BlockYSize="8" />
+      <SrcRect xOff="0" yOff="0" xSize="1021" ySize="1020" />
+      <DstRect xOff="11224" yOff="68369" xSize="1021" ySize="1020" />
+      <NODATA>255</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">E:/Marco/australia_lu_model/data/allocation/wa/2015a\pred_2015_506011115_v3_test_stable.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1021" RasterYSize="2041" DataType="Byte" BlockXSize="1021" BlockYSize="8" />
+      <SrcRect xOff="0" yOff="0" xSize="1021" ySize="2041" />
+      <DstRect xOff="11224" yOff="68369" xSize="1021" ySize="2041" />
+      <NODATA>255</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">E:/Marco/australia_lu_model/data/allocation/wa/2015a\pred_2015_506011116_v3_test_stable.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1021" RasterYSize="1020" DataType="Byte" BlockXSize="1021" BlockYSize="8" />
+      <SrcRect xOff="0" yOff="0" xSize="1021" ySize="1020" />
+      <DstRect xOff="11224" yOff="68369" xSize="1021" ySize="1020" />
+      <NODATA>255</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">E:/Marco/australia_lu_model/data/allocation/wa/2015a\pred_2015_506011117_v3_test_stable.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1021" RasterYSize="1020" DataType="Byte" BlockXSize="1021" BlockYSize="8" />
+      <SrcRect xOff="0" yOff="0" xSize="1021" ySize="1020" />
+      <DstRect xOff="11224" yOff="68369" xSize="1021" ySize="1020" />
+      <NODATA>255</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">E:/Marco/australia_lu_model/data/allocation/wa/2015a\pred_2015_506021118_v3_test_stable.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="2041" RasterYSize="1020" DataType="Byte" BlockXSize="2041" BlockYSize="4" />
+      <SrcRect xOff="0" yOff="0" xSize="2041" ySize="1020" />
+      <DstRect xOff="10204" yOff="68369" xSize="2041" ySize="1020" />
+      <NODATA>255</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">E:/Marco/australia_lu_model/data/allocation/wa/2015a\pred_2015_506021119_v3_test_stable.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1020" RasterYSize="1020" DataType="Byte" BlockXSize="1020" BlockYSize="8" />
+      <SrcRect xOff="0" yOff="0" xSize="1020" ySize="1020" />
+      <DstRect xOff="10204" yOff="68369" xSize="1020" ySize="1020" />
+      <NODATA>255</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">E:/Marco/australia_lu_model/data/allocation/wa/2015a\pred_2015_506021120_v3_test_stable.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="2041" RasterYSize="1020" DataType="Byte" BlockXSize="2041" BlockYSize="4" />
+      <SrcRect xOff="0" yOff="0" xSize="2041" ySize="1020" />
+      <DstRect xOff="10204" yOff="68369" xSize="2041" ySize="1020" />
+      <NODATA>255</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">E:/Marco/australia_lu_model/data/allocation/wa/2015a\pred_2015_506021121_v3_test_stable.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1021" RasterYSize="1020" DataType="Byte" BlockXSize="1021" BlockYSize="8" />
+      <SrcRect xOff="0" yOff="0" xSize="1021" ySize="1020" />
+      <DstRect xOff="11224" yOff="68369" xSize="1021" ySize="1020" />
+      <NODATA>255</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">E:/Marco/australia_lu_model/data/allocation/wa/2015a\pred_2015_506021122_v3_test_stable.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="2041" RasterYSize="1020" DataType="Byte" BlockXSize="2041" BlockYSize="4" />
+      <SrcRect xOff="0" yOff="0" xSize="2041" ySize="1020" />
+      <DstRect xOff="10204" yOff="68369" xSize="2041" ySize="1020" />
+      <NODATA>255</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">E:/Marco/australia_lu_model/data/allocation/wa/2015a\pred_2015_506021123_v3_test_stable.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1020" RasterYSize="1020" DataType="Byte" BlockXSize="1020" BlockYSize="8" />
+      <SrcRect xOff="0" yOff="0" xSize="1020" ySize="1020" />
+      <DstRect xOff="10204" yOff="68369" xSize="1020" ySize="1020" />
+      <NODATA>255</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">E:/Marco/australia_lu_model/data/allocation/wa/2015a\pred_2015_506031124_v3_test_stable.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1020" RasterYSize="1020" DataType="Byte" BlockXSize="1020" BlockYSize="8" />
+      <SrcRect xOff="0" yOff="0" xSize="1020" ySize="1020" />
+      <DstRect xOff="10204" yOff="68369" xSize="1020" ySize="1020" />
+      <NODATA>255</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">E:/Marco/australia_lu_model/data/allocation/wa/2015a\pred_2015_506031125_v3_test_stable.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1020" RasterYSize="1020" DataType="Byte" BlockXSize="1020" BlockYSize="8" />
+      <SrcRect xOff="0" yOff="0" xSize="1020" ySize="1020" />
+      <DstRect xOff="10204" yOff="68369" xSize="1020" ySize="1020" />
+      <NODATA>255</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">E:/Marco/australia_lu_model/data/allocation/wa/2015a\pred_2015_506031126_v3_test_stable.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1020" RasterYSize="1020" DataType="Byte" BlockXSize="1020" BlockYSize="8" />
+      <SrcRect xOff="0" yOff="0" xSize="1020" ySize="1020" />
+      <DstRect xOff="10204" yOff="68369" xSize="1020" ySize="1020" />
+      <NODATA>255</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">E:/Marco/australia_lu_model/data/allocation/wa/2015a\pred_2015_506031127_v3_test_stable.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="2041" RasterYSize="1020" DataType="Byte" BlockXSize="2041" BlockYSize="4" />
+      <SrcRect xOff="0" yOff="0" xSize="2041" ySize="1020" />
+      <DstRect xOff="10204" yOff="68369" xSize="2041" ySize="1020" />
+      <NODATA>255</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">E:/Marco/australia_lu_model/data/allocation/wa/2015a\pred_2015_506031128_v3_test_stable.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1020" RasterYSize="1020" DataType="Byte" BlockXSize="1020" BlockYSize="8" />
+      <SrcRect xOff="0" yOff="0" xSize="1020" ySize="1020" />
+      <DstRect xOff="10204" yOff="68369" xSize="1020" ySize="1020" />
+      <NODATA>255</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">E:/Marco/australia_lu_model/data/allocation/wa/2015a\pred_2015_506031129_v3_test_stable.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1020" RasterYSize="1020" DataType="Byte" BlockXSize="1020" BlockYSize="8" />
+      <SrcRect xOff="0" yOff="0" xSize="1020" ySize="1020" />
+      <DstRect xOff="10204" yOff="68369" xSize="1020" ySize="1020" />
+      <NODATA>255</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">E:/Marco/australia_lu_model/data/allocation/wa/2015a\pred_2015_506031130_v3_test_stable.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="2041" RasterYSize="1020" DataType="Byte" BlockXSize="2041" BlockYSize="4" />
+      <SrcRect xOff="0" yOff="0" xSize="2041" ySize="1020" />
+      <DstRect xOff="10204" yOff="68369" xSize="2041" ySize="1020" />
+      <NODATA>255</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">E:/Marco/australia_lu_model/data/allocation/wa/2015a\pred_2015_506031131_v3_test_stable.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1020" RasterYSize="1020" DataType="Byte" BlockXSize="1020" BlockYSize="8" />
+      <SrcRect xOff="0" yOff="0" xSize="1020" ySize="1020" />
+      <DstRect xOff="10204" yOff="68369" xSize="1020" ySize="1020" />
+      <NODATA>255</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">E:/Marco/australia_lu_model/data/allocation/wa/2015a\pred_2015_506041132_v3_test_stable.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="2041" RasterYSize="1020" DataType="Byte" BlockXSize="2041" BlockYSize="4" />
+      <SrcRect xOff="0" yOff="0" xSize="2041" ySize="1020" />
+      <DstRect xOff="10204" yOff="68369" xSize="2041" ySize="1020" />
+      <NODATA>255</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">E:/Marco/australia_lu_model/data/allocation/wa/2015a\pred_2015_506041133_v3_test_stable.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="2041" RasterYSize="1020" DataType="Byte" BlockXSize="2041" BlockYSize="4" />
+      <SrcRect xOff="0" yOff="0" xSize="2041" ySize="1020" />
+      <DstRect xOff="10204" yOff="68369" xSize="2041" ySize="1020" />
+      <NODATA>255</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">E:/Marco/australia_lu_model/data/allocation/wa/2015a\pred_2015_506041134_v3_test_stable.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1021" RasterYSize="1020" DataType="Byte" BlockXSize="1021" BlockYSize="8" />
+      <SrcRect xOff="0" yOff="0" xSize="1021" ySize="1020" />
+      <DstRect xOff="11224" yOff="68369" xSize="1021" ySize="1020" />
+      <NODATA>255</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">E:/Marco/australia_lu_model/data/allocation/wa/2015a\pred_2015_506041135_v3_test_stable.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="2041" RasterYSize="1020" DataType="Byte" BlockXSize="2041" BlockYSize="4" />
+      <SrcRect xOff="0" yOff="0" xSize="2041" ySize="1020" />
+      <DstRect xOff="10204" yOff="68369" xSize="2041" ySize="1020" />
+      <NODATA>255</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">E:/Marco/australia_lu_model/data/allocation/wa/2015a\pred_2015_506041136_v3_test_stable.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1021" RasterYSize="1020" DataType="Byte" BlockXSize="1021" BlockYSize="8" />
+      <SrcRect xOff="0" yOff="0" xSize="1021" ySize="1020" />
+      <DstRect xOff="11224" yOff="68369" xSize="1021" ySize="1020" />
+      <NODATA>255</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">E:/Marco/australia_lu_model/data/allocation/wa/2015a\pred_2015_506041137_v3_test_stable.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="2041" RasterYSize="1020" DataType="Byte" BlockXSize="2041" BlockYSize="4" />
+      <SrcRect xOff="0" yOff="0" xSize="2041" ySize="1020" />
+      <DstRect xOff="10204" yOff="68369" xSize="2041" ySize="1020" />
+      <NODATA>255</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">E:/Marco/australia_lu_model/data/allocation/wa/2015a\pred_2015_506051138_v3_test_stable.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1021" RasterYSize="1020" DataType="Byte" BlockXSize="1021" BlockYSize="8" />
+      <SrcRect xOff="0" yOff="0" xSize="1021" ySize="1020" />
+      <DstRect xOff="11224" yOff="68369" xSize="1021" ySize="1020" />
+      <NODATA>255</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">E:/Marco/australia_lu_model/data/allocation/wa/2015a\pred_2015_506051139_v3_test_stable.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1021" RasterYSize="1020" DataType="Byte" BlockXSize="1021" BlockYSize="8" />
+      <SrcRect xOff="0" yOff="0" xSize="1021" ySize="1020" />
+      <DstRect xOff="11224" yOff="68369" xSize="1021" ySize="1020" />
+      <NODATA>255</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">E:/Marco/australia_lu_model/data/allocation/wa/2015a\pred_2015_506051140_v3_test_stable.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1021" RasterYSize="1020" DataType="Byte" BlockXSize="1021" BlockYSize="8" />
+      <SrcRect xOff="0" yOff="0" xSize="1021" ySize="1020" />
+      <DstRect xOff="11224" yOff="68369" xSize="1021" ySize="1020" />
+      <NODATA>255</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">E:/Marco/australia_lu_model/data/allocation/wa/2015a\pred_2015_506051141_v3_test_stable.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="2041" RasterYSize="1020" DataType="Byte" BlockXSize="2041" BlockYSize="4" />
+      <SrcRect xOff="0" yOff="0" xSize="2041" ySize="1020" />
+      <DstRect xOff="11224" yOff="68369" xSize="2041" ySize="1020" />
+      <NODATA>255</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">E:/Marco/australia_lu_model/data/allocation/wa/2015a\pred_2015_506061142_v3_test_stable.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1021" RasterYSize="1021" DataType="Byte" BlockXSize="1021" BlockYSize="8" />
+      <SrcRect xOff="0" yOff="0" xSize="1021" ySize="1021" />
+      <DstRect xOff="11224" yOff="69389" xSize="1021" ySize="1021" />
+      <NODATA>255</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">E:/Marco/australia_lu_model/data/allocation/wa/2015a\pred_2015_506061143_v3_test_stable.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="2041" RasterYSize="1021" DataType="Byte" BlockXSize="2041" BlockYSize="4" />
+      <SrcRect xOff="0" yOff="0" xSize="2041" ySize="1021" />
+      <DstRect xOff="10204" yOff="69389" xSize="2041" ySize="1021" />
+      <NODATA>255</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">E:/Marco/australia_lu_model/data/allocation/wa/2015a\pred_2015_506061144_v3_test_stable.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="3061" RasterYSize="2041" DataType="Byte" BlockXSize="3061" BlockYSize="2" />
+      <SrcRect xOff="0" yOff="0" xSize="3061" ySize="2041" />
+      <DstRect xOff="10204" yOff="69389" xSize="3061" ySize="2041" />
+      <NODATA>255</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">E:/Marco/australia_lu_model/data/allocation/wa/2015a\pred_2015_506071145_v3_test_stable.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1020" RasterYSize="1020" DataType="Byte" BlockXSize="1020" BlockYSize="8" />
+      <SrcRect xOff="0" yOff="0" xSize="1020" ySize="1020" />
+      <DstRect xOff="10204" yOff="68369" xSize="1020" ySize="1020" />
+      <NODATA>255</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">E:/Marco/australia_lu_model/data/allocation/wa/2015a\pred_2015_506071146_v3_test_stable.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1020" RasterYSize="1020" DataType="Byte" BlockXSize="1020" BlockYSize="8" />
+      <SrcRect xOff="0" yOff="0" xSize="1020" ySize="1020" />
+      <DstRect xOff="10204" yOff="68369" xSize="1020" ySize="1020" />
+      <NODATA>255</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">E:/Marco/australia_lu_model/data/allocation/wa/2015a\pred_2015_506071147_v3_test_stable.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1020" RasterYSize="1020" DataType="Byte" BlockXSize="1020" BlockYSize="8" />
+      <SrcRect xOff="0" yOff="0" xSize="1020" ySize="1020" />
+      <DstRect xOff="10204" yOff="68369" xSize="1020" ySize="1020" />
+      <NODATA>255</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">E:/Marco/australia_lu_model/data/allocation/wa/2015a\pred_2015_507011148_v3_test_stable.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1020" RasterYSize="2041" DataType="Byte" BlockXSize="1020" BlockYSize="8" />
+      <SrcRect xOff="0" yOff="0" xSize="1020" ySize="2041" />
+      <DstRect xOff="10204" yOff="68369" xSize="1020" ySize="2041" />
+      <NODATA>255</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">E:/Marco/australia_lu_model/data/allocation/wa/2015a\pred_2015_507011149_v3_test_stable.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1020" RasterYSize="1020" DataType="Byte" BlockXSize="1020" BlockYSize="8" />
+      <SrcRect xOff="0" yOff="0" xSize="1020" ySize="1020" />
+      <DstRect xOff="10204" yOff="68369" xSize="1020" ySize="1020" />
+      <NODATA>255</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">E:/Marco/australia_lu_model/data/allocation/wa/2015a\pred_2015_507011150_v3_test_stable.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1020" RasterYSize="1020" DataType="Byte" BlockXSize="1020" BlockYSize="8" />
+      <SrcRect xOff="0" yOff="0" xSize="1020" ySize="1020" />
+      <DstRect xOff="10204" yOff="68369" xSize="1020" ySize="1020" />
+      <NODATA>255</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">E:/Marco/australia_lu_model/data/allocation/wa/2015a\pred_2015_507011151_v3_test_stable.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1020" RasterYSize="1020" DataType="Byte" BlockXSize="1020" BlockYSize="8" />
+      <SrcRect xOff="0" yOff="0" xSize="1020" ySize="1020" />
+      <DstRect xOff="10204" yOff="68369" xSize="1020" ySize="1020" />
+      <NODATA>255</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">E:/Marco/australia_lu_model/data/allocation/wa/2015a\pred_2015_507011152_v3_test_stable.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1020" RasterYSize="1020" DataType="Byte" BlockXSize="1020" BlockYSize="8" />
+      <SrcRect xOff="0" yOff="0" xSize="1020" ySize="1020" />
+      <DstRect xOff="10204" yOff="68369" xSize="1020" ySize="1020" />
+      <NODATA>255</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">E:/Marco/australia_lu_model/data/allocation/wa/2015a\pred_2015_507011153_v3_test_stable.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1020" RasterYSize="1020" DataType="Byte" BlockXSize="1020" BlockYSize="8" />
+      <SrcRect xOff="0" yOff="0" xSize="1020" ySize="1020" />
+      <DstRect xOff="10204" yOff="68369" xSize="1020" ySize="1020" />
+      <NODATA>255</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">E:/Marco/australia_lu_model/data/allocation/wa/2015a\pred_2015_507011154_v3_test_stable.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1020" RasterYSize="1020" DataType="Byte" BlockXSize="1020" BlockYSize="8" />
+      <SrcRect xOff="0" yOff="0" xSize="1020" ySize="1020" />
+      <DstRect xOff="10204" yOff="68369" xSize="1020" ySize="1020" />
+      <NODATA>255</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">E:/Marco/australia_lu_model/data/allocation/wa/2015a\pred_2015_507011155_v3_test_stable.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1020" RasterYSize="2041" DataType="Byte" BlockXSize="1020" BlockYSize="8" />
+      <SrcRect xOff="0" yOff="0" xSize="1020" ySize="2041" />
+      <DstRect xOff="10204" yOff="68369" xSize="1020" ySize="2041" />
+      <NODATA>255</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">E:/Marco/australia_lu_model/data/allocation/wa/2015a\pred_2015_507011156_v3_test_stable.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1020" RasterYSize="1020" DataType="Byte" BlockXSize="1020" BlockYSize="8" />
+      <SrcRect xOff="0" yOff="0" xSize="1020" ySize="1020" />
+      <DstRect xOff="10204" yOff="68369" xSize="1020" ySize="1020" />
+      <NODATA>255</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">E:/Marco/australia_lu_model/data/allocation/wa/2015a\pred_2015_507011157_v3_test_stable.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1020" RasterYSize="1020" DataType="Byte" BlockXSize="1020" BlockYSize="8" />
+      <SrcRect xOff="0" yOff="0" xSize="1020" ySize="1020" />
+      <DstRect xOff="10204" yOff="68369" xSize="1020" ySize="1020" />
+      <NODATA>255</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">E:/Marco/australia_lu_model/data/allocation/wa/2015a\pred_2015_507011158_v3_test_stable.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1020" RasterYSize="1020" DataType="Byte" BlockXSize="1020" BlockYSize="8" />
+      <SrcRect xOff="0" yOff="0" xSize="1020" ySize="1020" />
+      <DstRect xOff="10204" yOff="68369" xSize="1020" ySize="1020" />
+      <NODATA>255</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">E:/Marco/australia_lu_model/data/allocation/wa/2015a\pred_2015_507011159_v3_test_stable.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1020" RasterYSize="1020" DataType="Byte" BlockXSize="1020" BlockYSize="8" />
+      <SrcRect xOff="0" yOff="0" xSize="1020" ySize="1020" />
+      <DstRect xOff="10204" yOff="68369" xSize="1020" ySize="1020" />
+      <NODATA>255</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">E:/Marco/australia_lu_model/data/allocation/wa/2015a\pred_2015_507011160_v3_test_stable.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1020" RasterYSize="1020" DataType="Byte" BlockXSize="1020" BlockYSize="8" />
+      <SrcRect xOff="0" yOff="0" xSize="1020" ySize="1020" />
+      <DstRect xOff="10204" yOff="68369" xSize="1020" ySize="1020" />
+      <NODATA>255</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">E:/Marco/australia_lu_model/data/allocation/wa/2015a\pred_2015_507011161_v3_test_stable.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1020" RasterYSize="2041" DataType="Byte" BlockXSize="1020" BlockYSize="8" />
+      <SrcRect xOff="0" yOff="0" xSize="1020" ySize="2041" />
+      <DstRect xOff="10204" yOff="68369" xSize="1020" ySize="2041" />
+      <NODATA>255</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">E:/Marco/australia_lu_model/data/allocation/wa/2015a\pred_2015_507011162_v3_test_stable.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1020" RasterYSize="2041" DataType="Byte" BlockXSize="1020" BlockYSize="8" />
+      <SrcRect xOff="0" yOff="0" xSize="1020" ySize="2041" />
+      <DstRect xOff="10204" yOff="68369" xSize="1020" ySize="2041" />
+      <NODATA>255</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">E:/Marco/australia_lu_model/data/allocation/wa/2015a\pred_2015_507011163_v3_test_stable.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1020" RasterYSize="1020" DataType="Byte" BlockXSize="1020" BlockYSize="8" />
+      <SrcRect xOff="0" yOff="0" xSize="1020" ySize="1020" />
+      <DstRect xOff="10204" yOff="68369" xSize="1020" ySize="1020" />
+      <NODATA>255</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">E:/Marco/australia_lu_model/data/allocation/wa/2015a\pred_2015_507021164_v3_test_stable.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1020" RasterYSize="1020" DataType="Byte" BlockXSize="1020" BlockYSize="8" />
+      <SrcRect xOff="0" yOff="0" xSize="1020" ySize="1020" />
+      <DstRect xOff="10204" yOff="68369" xSize="1020" ySize="1020" />
+      <NODATA>255</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">E:/Marco/australia_lu_model/data/allocation/wa/2015a\pred_2015_507021165_v3_test_stable.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="2040" RasterYSize="1020" DataType="Byte" BlockXSize="2040" BlockYSize="4" />
+      <SrcRect xOff="0" yOff="0" xSize="2040" ySize="1020" />
+      <DstRect xOff="9184" yOff="68369" xSize="2040" ySize="1020" />
+      <NODATA>255</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">E:/Marco/australia_lu_model/data/allocation/wa/2015a\pred_2015_507021166_v3_test_stable.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1020" RasterYSize="1020" DataType="Byte" BlockXSize="1020" BlockYSize="8" />
+      <SrcRect xOff="0" yOff="0" xSize="1020" ySize="1020" />
+      <DstRect xOff="10204" yOff="68369" xSize="1020" ySize="1020" />
+      <NODATA>255</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">E:/Marco/australia_lu_model/data/allocation/wa/2015a\pred_2015_507021167_v3_test_stable.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1020" RasterYSize="1020" DataType="Byte" BlockXSize="1020" BlockYSize="8" />
+      <SrcRect xOff="0" yOff="0" xSize="1020" ySize="1020" />
+      <DstRect xOff="10204" yOff="68369" xSize="1020" ySize="1020" />
+      <NODATA>255</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">E:/Marco/australia_lu_model/data/allocation/wa/2015a\pred_2015_507031168_v3_test_stable.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1020" RasterYSize="1021" DataType="Byte" BlockXSize="1020" BlockYSize="8" />
+      <SrcRect xOff="0" yOff="0" xSize="1020" ySize="1021" />
+      <DstRect xOff="10204" yOff="69389" xSize="1020" ySize="1021" />
+      <NODATA>255</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">E:/Marco/australia_lu_model/data/allocation/wa/2015a\pred_2015_507031169_v3_test_stable.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1020" RasterYSize="1021" DataType="Byte" BlockXSize="1020" BlockYSize="8" />
+      <SrcRect xOff="0" yOff="0" xSize="1020" ySize="1021" />
+      <DstRect xOff="10204" yOff="69389" xSize="1020" ySize="1021" />
+      <NODATA>255</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">E:/Marco/australia_lu_model/data/allocation/wa/2015a\pred_2015_507031170_v3_test_stable.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1020" RasterYSize="1021" DataType="Byte" BlockXSize="1020" BlockYSize="8" />
+      <SrcRect xOff="0" yOff="0" xSize="1020" ySize="1021" />
+      <DstRect xOff="10204" yOff="69389" xSize="1020" ySize="1021" />
+      <NODATA>255</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">E:/Marco/australia_lu_model/data/allocation/wa/2015a\pred_2015_507031171_v3_test_stable.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1020" RasterYSize="1021" DataType="Byte" BlockXSize="1020" BlockYSize="8" />
+      <SrcRect xOff="0" yOff="0" xSize="1020" ySize="1021" />
+      <DstRect xOff="10204" yOff="69389" xSize="1020" ySize="1021" />
+      <NODATA>255</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">E:/Marco/australia_lu_model/data/allocation/wa/2015a\pred_2015_507031172_v3_test_stable.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1020" RasterYSize="1021" DataType="Byte" BlockXSize="1020" BlockYSize="8" />
+      <SrcRect xOff="0" yOff="0" xSize="1020" ySize="1021" />
+      <DstRect xOff="10204" yOff="69389" xSize="1020" ySize="1021" />
+      <NODATA>255</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">E:/Marco/australia_lu_model/data/allocation/wa/2015a\pred_2015_507031173_v3_test_stable.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1020" RasterYSize="1021" DataType="Byte" BlockXSize="1020" BlockYSize="8" />
+      <SrcRect xOff="0" yOff="0" xSize="1020" ySize="1021" />
+      <DstRect xOff="10204" yOff="69389" xSize="1020" ySize="1021" />
+      <NODATA>255</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">E:/Marco/australia_lu_model/data/allocation/wa/2015a\pred_2015_507031174_v3_test_stable.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1020" RasterYSize="1021" DataType="Byte" BlockXSize="1020" BlockYSize="8" />
+      <SrcRect xOff="0" yOff="0" xSize="1020" ySize="1021" />
+      <DstRect xOff="10204" yOff="69389" xSize="1020" ySize="1021" />
+      <NODATA>255</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">E:/Marco/australia_lu_model/data/allocation/wa/2015a\pred_2015_507041175_v3_test_stable.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1020" RasterYSize="1020" DataType="Byte" BlockXSize="1020" BlockYSize="8" />
+      <SrcRect xOff="0" yOff="0" xSize="1020" ySize="1020" />
+      <DstRect xOff="10204" yOff="68369" xSize="1020" ySize="1020" />
+      <NODATA>255</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">E:/Marco/australia_lu_model/data/allocation/wa/2015a\pred_2015_507041176_v3_test_stable.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1020" RasterYSize="1020" DataType="Byte" BlockXSize="1020" BlockYSize="8" />
+      <SrcRect xOff="0" yOff="0" xSize="1020" ySize="1020" />
+      <DstRect xOff="10204" yOff="68369" xSize="1020" ySize="1020" />
+      <NODATA>255</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">E:/Marco/australia_lu_model/data/allocation/wa/2015a\pred_2015_507041177_v3_test_stable.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1020" RasterYSize="1020" DataType="Byte" BlockXSize="1020" BlockYSize="8" />
+      <SrcRect xOff="0" yOff="0" xSize="1020" ySize="1020" />
+      <DstRect xOff="10204" yOff="68369" xSize="1020" ySize="1020" />
+      <NODATA>255</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">E:/Marco/australia_lu_model/data/allocation/wa/2015a\pred_2015_507041178_v3_test_stable.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1020" RasterYSize="1020" DataType="Byte" BlockXSize="1020" BlockYSize="8" />
+      <SrcRect xOff="0" yOff="0" xSize="1020" ySize="1020" />
+      <DstRect xOff="10204" yOff="68369" xSize="1020" ySize="1020" />
+      <NODATA>255</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">E:/Marco/australia_lu_model/data/allocation/wa/2015a\pred_2015_507041179_v3_test_stable.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1020" RasterYSize="1020" DataType="Byte" BlockXSize="1020" BlockYSize="8" />
+      <SrcRect xOff="0" yOff="0" xSize="1020" ySize="1020" />
+      <DstRect xOff="10204" yOff="68369" xSize="1020" ySize="1020" />
+      <NODATA>255</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">E:/Marco/australia_lu_model/data/allocation/wa/2015a\pred_2015_507041180_v3_test_stable.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1020" RasterYSize="1020" DataType="Byte" BlockXSize="1020" BlockYSize="8" />
+      <SrcRect xOff="0" yOff="0" xSize="1020" ySize="1020" />
+      <DstRect xOff="10204" yOff="68369" xSize="1020" ySize="1020" />
+      <NODATA>255</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">E:/Marco/australia_lu_model/data/allocation/wa/2015a\pred_2015_507041181_v3_test_stable.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1020" RasterYSize="1020" DataType="Byte" BlockXSize="1020" BlockYSize="8" />
+      <SrcRect xOff="0" yOff="0" xSize="1020" ySize="1020" />
+      <DstRect xOff="10204" yOff="68369" xSize="1020" ySize="1020" />
+      <NODATA>255</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">E:/Marco/australia_lu_model/data/allocation/wa/2015a\pred_2015_507041182_v3_test_stable.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1020" RasterYSize="1020" DataType="Byte" BlockXSize="1020" BlockYSize="8" />
+      <SrcRect xOff="0" yOff="0" xSize="1020" ySize="1020" />
+      <DstRect xOff="10204" yOff="68369" xSize="1020" ySize="1020" />
+      <NODATA>255</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">E:/Marco/australia_lu_model/data/allocation/wa/2015a\pred_2015_507041183_v3_test_stable.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1020" RasterYSize="1020" DataType="Byte" BlockXSize="1020" BlockYSize="8" />
+      <SrcRect xOff="0" yOff="0" xSize="1020" ySize="1020" />
+      <DstRect xOff="10204" yOff="68369" xSize="1020" ySize="1020" />
+      <NODATA>255</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">E:/Marco/australia_lu_model/data/allocation/wa/2015a\pred_2015_507041184_v3_test_stable.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1020" RasterYSize="1020" DataType="Byte" BlockXSize="1020" BlockYSize="8" />
+      <SrcRect xOff="0" yOff="0" xSize="1020" ySize="1020" />
+      <DstRect xOff="10204" yOff="68369" xSize="1020" ySize="1020" />
+      <NODATA>255</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">E:/Marco/australia_lu_model/data/allocation/wa/2015a\pred_2015_507051185_v3_test_stable.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1020" RasterYSize="2041" DataType="Byte" BlockXSize="1020" BlockYSize="8" />
+      <SrcRect xOff="0" yOff="0" xSize="1020" ySize="2041" />
+      <DstRect xOff="10204" yOff="69389" xSize="1020" ySize="2041" />
+      <NODATA>255</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">E:/Marco/australia_lu_model/data/allocation/wa/2015a\pred_2015_507051186_v3_test_stable.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1020" RasterYSize="1021" DataType="Byte" BlockXSize="1020" BlockYSize="8" />
+      <SrcRect xOff="0" yOff="0" xSize="1020" ySize="1021" />
+      <DstRect xOff="10204" yOff="69389" xSize="1020" ySize="1021" />
+      <NODATA>255</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">E:/Marco/australia_lu_model/data/allocation/wa/2015a\pred_2015_507051187_v3_test_stable.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1020" RasterYSize="1021" DataType="Byte" BlockXSize="1020" BlockYSize="8" />
+      <SrcRect xOff="0" yOff="0" xSize="1020" ySize="1021" />
+      <DstRect xOff="10204" yOff="69389" xSize="1020" ySize="1021" />
+      <NODATA>255</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">E:/Marco/australia_lu_model/data/allocation/wa/2015a\pred_2015_507051188_v3_test_stable.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="2040" RasterYSize="2041" DataType="Byte" BlockXSize="2040" BlockYSize="4" />
+      <SrcRect xOff="0" yOff="0" xSize="2040" ySize="2041" />
+      <DstRect xOff="9184" yOff="68369" xSize="2040" ySize="2041" />
+      <NODATA>255</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">E:/Marco/australia_lu_model/data/allocation/wa/2015a\pred_2015_507051189_v3_test_stable.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1020" RasterYSize="1021" DataType="Byte" BlockXSize="1020" BlockYSize="8" />
+      <SrcRect xOff="0" yOff="0" xSize="1020" ySize="1021" />
+      <DstRect xOff="10204" yOff="69389" xSize="1020" ySize="1021" />
+      <NODATA>255</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">E:/Marco/australia_lu_model/data/allocation/wa/2015a\pred_2015_507051190_v3_test_stable.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1020" RasterYSize="1021" DataType="Byte" BlockXSize="1020" BlockYSize="8" />
+      <SrcRect xOff="0" yOff="0" xSize="1020" ySize="1021" />
+      <DstRect xOff="10204" yOff="69389" xSize="1020" ySize="1021" />
+      <NODATA>255</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">E:/Marco/australia_lu_model/data/allocation/wa/2015a\pred_2015_507051191_v3_test_stable.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1020" RasterYSize="2041" DataType="Byte" BlockXSize="1020" BlockYSize="8" />
+      <SrcRect xOff="0" yOff="0" xSize="1020" ySize="2041" />
+      <DstRect xOff="10204" yOff="69389" xSize="1020" ySize="2041" />
+      <NODATA>255</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">E:/Marco/australia_lu_model/data/allocation/wa/2015a\pred_2015_507051192_v3_test_stable.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1020" RasterYSize="1021" DataType="Byte" BlockXSize="1020" BlockYSize="8" />
+      <SrcRect xOff="0" yOff="0" xSize="1020" ySize="1021" />
+      <DstRect xOff="10204" yOff="69389" xSize="1020" ySize="1021" />
+      <NODATA>255</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">E:/Marco/australia_lu_model/data/allocation/wa/2015a\pred_2015_507051193_v3_test_stable.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1020" RasterYSize="1021" DataType="Byte" BlockXSize="1020" BlockYSize="8" />
+      <SrcRect xOff="0" yOff="0" xSize="1020" ySize="1021" />
+      <DstRect xOff="10204" yOff="69389" xSize="1020" ySize="1021" />
+      <NODATA>255</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">E:/Marco/australia_lu_model/data/allocation/wa/2015a\pred_2015_508011194_v3_test_stable.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="3061" RasterYSize="2040" DataType="Byte" BlockXSize="3061" BlockYSize="2" />
+      <SrcRect xOff="0" yOff="0" xSize="3061" ySize="2040" />
+      <DstRect xOff="31633" yOff="74492" xSize="3061" ySize="2040" />
+      <NODATA>255</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">E:/Marco/australia_lu_model/data/allocation/wa/2015a\pred_2015_508011195_v3_test_stable.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="20409" RasterYSize="8163" DataType="Byte" BlockXSize="20409" BlockYSize="1" />
+      <SrcRect xOff="0" yOff="0" xSize="20409" ySize="8163" />
+      <DstRect xOff="22449" yOff="70410" xSize="20409" ySize="8163" />
+      <NODATA>255</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">E:/Marco/australia_lu_model/data/allocation/wa/2015a\pred_2015_508021196_v3_test_stable.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="2040" RasterYSize="1020" DataType="Byte" BlockXSize="2040" BlockYSize="4" />
+      <SrcRect xOff="0" yOff="0" xSize="2040" ySize="1020" />
+      <DstRect xOff="2041" yOff="41838" xSize="2040" ySize="1020" />
+      <NODATA>255</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">E:/Marco/australia_lu_model/data/allocation/wa/2015a\pred_2015_508021197_v3_test_stable.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="18367" RasterYSize="21429" DataType="Byte" BlockXSize="18367" BlockYSize="1" />
+      <SrcRect xOff="0" yOff="0" xSize="18367" ySize="21429" />
+      <DstRect xOff="0" yOff="30613" xSize="18367" ySize="21429" />
+      <NODATA>255</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">E:/Marco/australia_lu_model/data/allocation/wa/2015a\pred_2015_508031198_v3_test_stable.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1020" RasterYSize="2041" DataType="Byte" BlockXSize="1020" BlockYSize="8" />
+      <SrcRect xOff="0" yOff="0" xSize="1020" ySize="2041" />
+      <DstRect xOff="31633" yOff="63267" xSize="1020" ySize="2041" />
+      <NODATA>255</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">E:/Marco/australia_lu_model/data/allocation/wa/2015a\pred_2015_508031199_v3_test_stable.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="2040" RasterYSize="2041" DataType="Byte" BlockXSize="2040" BlockYSize="4" />
+      <SrcRect xOff="0" yOff="0" xSize="2040" ySize="2041" />
+      <DstRect xOff="30613" yOff="63267" xSize="2040" ySize="2041" />
+      <NODATA>255</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">E:/Marco/australia_lu_model/data/allocation/wa/2015a\pred_2015_508031200_v3_test_stable.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="2040" RasterYSize="1020" DataType="Byte" BlockXSize="2040" BlockYSize="4" />
+      <SrcRect xOff="0" yOff="0" xSize="2040" ySize="1020" />
+      <DstRect xOff="30613" yOff="63267" xSize="2040" ySize="1020" />
+      <NODATA>255</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">E:/Marco/australia_lu_model/data/allocation/wa/2015a\pred_2015_508031201_v3_test_stable.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="2040" RasterYSize="2041" DataType="Byte" BlockXSize="2040" BlockYSize="4" />
+      <SrcRect xOff="0" yOff="0" xSize="2040" ySize="2041" />
+      <DstRect xOff="30613" yOff="63267" xSize="2040" ySize="2041" />
+      <NODATA>255</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">E:/Marco/australia_lu_model/data/allocation/wa/2015a\pred_2015_508031202_v3_test_stable.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="34695" RasterYSize="12245" DataType="Byte" BlockXSize="34695" BlockYSize="1" />
+      <SrcRect xOff="0" yOff="0" xSize="34695" ySize="12245" />
+      <DstRect xOff="25510" yOff="61226" xSize="34695" ySize="12245" />
+      <NODATA>255</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">E:/Marco/australia_lu_model/data/allocation/wa/2015a\pred_2015_508031203_v3_test_stable.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="39797" RasterYSize="26531" DataType="Byte" BlockXSize="39797" BlockYSize="1" />
+      <SrcRect xOff="0" yOff="0" xSize="39797" ySize="26531" />
+      <DstRect xOff="20408" yOff="36736" xSize="39797" ySize="26531" />
+      <NODATA>255</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">E:/Marco/australia_lu_model/data/allocation/wa/2015a\pred_2015_508031204_v3_test_stable.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1020" RasterYSize="2041" DataType="Byte" BlockXSize="1020" BlockYSize="8" />
+      <SrcRect xOff="0" yOff="0" xSize="1020" ySize="2041" />
+      <DstRect xOff="31633" yOff="63267" xSize="1020" ySize="2041" />
+      <NODATA>255</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">E:/Marco/australia_lu_model/data/allocation/wa/2015a\pred_2015_508041205_v3_test_stable.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1020" RasterYSize="1021" DataType="Byte" BlockXSize="1020" BlockYSize="8" />
+      <SrcRect xOff="0" yOff="0" xSize="1020" ySize="1021" />
+      <DstRect xOff="33674" yOff="16327" xSize="1020" ySize="1021" />
+      <NODATA>255</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">E:/Marco/australia_lu_model/data/allocation/wa/2015a\pred_2015_508041206_v3_test_stable.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="15307" RasterYSize="15307" DataType="Byte" BlockXSize="15307" BlockYSize="1" />
+      <SrcRect xOff="0" yOff="0" xSize="15307" ySize="15307" />
+      <DstRect xOff="36735" yOff="7143" xSize="15307" ySize="15307" />
+      <NODATA>255</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">E:/Marco/australia_lu_model/data/allocation/wa/2015a\pred_2015_508041207_v3_test_stable.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="12245" RasterYSize="17348" DataType="Byte" BlockXSize="12245" BlockYSize="1" />
+      <SrcRect xOff="0" yOff="0" xSize="12245" ySize="17348" />
+      <DstRect xOff="47960" yOff="12245" xSize="12245" ySize="17348" />
+      <NODATA>255</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">E:/Marco/australia_lu_model/data/allocation/wa/2015a\pred_2015_508041208_v3_test_stable.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="19388" RasterYSize="14286" DataType="Byte" BlockXSize="19388" BlockYSize="1" />
+      <SrcRect xOff="0" yOff="0" xSize="19388" ySize="14286" />
+      <DstRect xOff="40817" yOff="0" xSize="19388" ySize="14286" />
+      <NODATA>255</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">E:/Marco/australia_lu_model/data/allocation/wa/2015a\pred_2015_508041209_v3_test_stable.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="14286" RasterYSize="15306" DataType="Byte" BlockXSize="14286" BlockYSize="1" />
+      <SrcRect xOff="0" yOff="0" xSize="14286" ySize="15306" />
+      <DstRect xOff="25510" yOff="10205" xSize="14286" ySize="15306" />
+      <NODATA>255</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">E:/Marco/australia_lu_model/data/allocation/wa/2015a\pred_2015_508051210_v3_test_stable.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1021" RasterYSize="1020" DataType="Byte" BlockXSize="1021" BlockYSize="8" />
+      <SrcRect xOff="0" yOff="0" xSize="1021" ySize="1020" />
+      <DstRect xOff="6122" yOff="56124" xSize="1021" ySize="1020" />
+      <NODATA>255</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">E:/Marco/australia_lu_model/data/allocation/wa/2015a\pred_2015_508051211_v3_test_stable.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1021" RasterYSize="2041" DataType="Byte" BlockXSize="1021" BlockYSize="8" />
+      <SrcRect xOff="0" yOff="0" xSize="1021" ySize="2041" />
+      <DstRect xOff="6122" yOff="56124" xSize="1021" ySize="2041" />
+      <NODATA>255</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">E:/Marco/australia_lu_model/data/allocation/wa/2015a\pred_2015_508051212_v3_test_stable.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="2041" RasterYSize="2041" DataType="Byte" BlockXSize="2041" BlockYSize="4" />
+      <SrcRect xOff="0" yOff="0" xSize="2041" ySize="2041" />
+      <DstRect xOff="5102" yOff="55103" xSize="2041" ySize="2041" />
+      <NODATA>255</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">E:/Marco/australia_lu_model/data/allocation/wa/2015a\pred_2015_508051213_v3_test_stable.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1021" RasterYSize="2041" DataType="Byte" BlockXSize="1021" BlockYSize="8" />
+      <SrcRect xOff="0" yOff="0" xSize="1021" ySize="2041" />
+      <DstRect xOff="6122" yOff="56124" xSize="1021" ySize="2041" />
+      <NODATA>255</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">E:/Marco/australia_lu_model/data/allocation/wa/2015a\pred_2015_508051214_v3_test_stable.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="3062" RasterYSize="4082" DataType="Byte" BlockXSize="3062" BlockYSize="2" />
+      <SrcRect xOff="0" yOff="0" xSize="3062" ySize="4082" />
+      <DstRect xOff="6122" yOff="57144" xSize="3062" ySize="4082" />
+      <NODATA>255</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">E:/Marco/australia_lu_model/data/allocation/wa/2015a\pred_2015_508051215_v3_test_stable.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="35715" RasterYSize="25511" DataType="Byte" BlockXSize="35715" BlockYSize="1" />
+      <SrcRect xOff="0" yOff="0" xSize="35715" ySize="25511" />
+      <DstRect xOff="8163" yOff="35715" xSize="35715" ySize="25511" />
+      <NODATA>255</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">E:/Marco/australia_lu_model/data/allocation/wa/2015a\pred_2015_508051216_v3_test_stable.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="9184" RasterYSize="6122" DataType="Byte" BlockXSize="9184" BlockYSize="1" />
+      <SrcRect xOff="0" yOff="0" xSize="9184" ySize="6122" />
+      <DstRect xOff="7143" yOff="56124" xSize="9184" ySize="6122" />
+      <NODATA>255</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">E:/Marco/australia_lu_model/data/allocation/wa/2015a\pred_2015_508051217_v3_test_stable.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="11224" RasterYSize="8164" DataType="Byte" BlockXSize="11224" BlockYSize="1" />
+      <SrcRect xOff="0" yOff="0" xSize="11224" ySize="8164" />
+      <DstRect xOff="2041" yOff="50001" xSize="11224" ySize="8164" />
+      <NODATA>255</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">E:/Marco/australia_lu_model/data/allocation/wa/2015a\pred_2015_508061218_v3_test_stable.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="19388" RasterYSize="13266" DataType="Byte" BlockXSize="19388" BlockYSize="1" />
+      <SrcRect xOff="0" yOff="0" xSize="19388" ySize="13266" />
+      <DstRect xOff="5102" yOff="25511" xSize="19388" ySize="13266" />
+      <NODATA>255</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">E:/Marco/australia_lu_model/data/allocation/wa/2015a\pred_2015_508061219_v3_test_stable.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="42858" RasterYSize="17348" DataType="Byte" BlockXSize="42858" BlockYSize="1" />
+      <SrcRect xOff="0" yOff="0" xSize="42858" ySize="17348" />
+      <DstRect xOff="17347" yOff="21429" xSize="42858" ySize="17348" />
+      <NODATA>255</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">E:/Marco/australia_lu_model/data/allocation/wa/2015a\pred_2015_508061220_v3_test_stable.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="2041" RasterYSize="1021" DataType="Byte" BlockXSize="2041" BlockYSize="4" />
+      <SrcRect xOff="0" yOff="0" xSize="2041" ySize="1021" />
+      <DstRect xOff="13265" yOff="26531" xSize="2041" ySize="1021" />
+      <NODATA>255</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">E:/Marco/australia_lu_model/data/allocation/wa/2015a\pred_2015_508061221_v3_test_stable.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1020" RasterYSize="2041" DataType="Byte" BlockXSize="1020" BlockYSize="8" />
+      <SrcRect xOff="0" yOff="0" xSize="1020" ySize="2041" />
+      <DstRect xOff="24490" yOff="35715" xSize="1020" ySize="2041" />
+      <NODATA>255</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">E:/Marco/australia_lu_model/data/allocation/wa/2015a\pred_2015_508061222_v3_test_stable.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1021" RasterYSize="2040" DataType="Byte" BlockXSize="1021" BlockYSize="8" />
+      <SrcRect xOff="0" yOff="0" xSize="1021" ySize="2040" />
+      <DstRect xOff="20408" yOff="24491" xSize="1021" ySize="2040" />
+      <NODATA>255</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">E:/Marco/australia_lu_model/data/allocation/wa/2015a\pred_2015_508061223_v3_test_stable.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="11224" RasterYSize="6123" DataType="Byte" BlockXSize="11224" BlockYSize="1" />
+      <SrcRect xOff="0" yOff="0" xSize="11224" ySize="6123" />
+      <DstRect xOff="9184" yOff="25511" xSize="11224" ySize="6123" />
+      <NODATA>255</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">E:/Marco/australia_lu_model/data/allocation/wa/2015a\pred_2015_508061224_v3_test_stable.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1021" RasterYSize="1020" DataType="Byte" BlockXSize="1021" BlockYSize="8" />
+      <SrcRect xOff="0" yOff="0" xSize="1021" ySize="1020" />
+      <DstRect xOff="20408" yOff="25511" xSize="1021" ySize="1020" />
+      <NODATA>255</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">E:/Marco/australia_lu_model/data/allocation/wa/2015a\pred_2015_509011225_v3_test_stable.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="2041" RasterYSize="1020" DataType="Byte" BlockXSize="2041" BlockYSize="4" />
+      <SrcRect xOff="0" yOff="0" xSize="2041" ySize="1020" />
+      <DstRect xOff="17347" yOff="79594" xSize="2041" ySize="1020" />
+      <NODATA>255</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">E:/Marco/australia_lu_model/data/allocation/wa/2015a\pred_2015_509011226_v3_test_stable.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="6122" RasterYSize="4082" DataType="Byte" BlockXSize="6122" BlockYSize="1" />
+      <SrcRect xOff="0" yOff="0" xSize="6122" ySize="4082" />
+      <DstRect xOff="16327" yOff="76532" xSize="6122" ySize="4082" />
+      <NODATA>255</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">E:/Marco/australia_lu_model/data/allocation/wa/2015a\pred_2015_509011227_v3_test_stable.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1021" RasterYSize="1020" DataType="Byte" BlockXSize="1021" BlockYSize="8" />
+      <SrcRect xOff="0" yOff="0" xSize="1021" ySize="1020" />
+      <DstRect xOff="18367" yOff="79594" xSize="1021" ySize="1020" />
+      <NODATA>255</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">E:/Marco/australia_lu_model/data/allocation/wa/2015a\pred_2015_509011228_v3_test_stable.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="4082" RasterYSize="2041" DataType="Byte" BlockXSize="4082" BlockYSize="2" />
+      <SrcRect xOff="0" yOff="0" xSize="4082" ySize="2041" />
+      <DstRect xOff="13265" yOff="78573" xSize="4082" ySize="2041" />
+      <NODATA>255</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">E:/Marco/australia_lu_model/data/allocation/wa/2015a\pred_2015_509011229_v3_test_stable.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="8163" RasterYSize="5102" DataType="Byte" BlockXSize="8163" BlockYSize="1" />
+      <SrcRect xOff="0" yOff="0" xSize="8163" ySize="5102" />
+      <DstRect xOff="17347" yOff="73471" xSize="8163" ySize="5102" />
+      <NODATA>255</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">E:/Marco/australia_lu_model/data/allocation/wa/2015a\pred_2015_509011230_v3_test_stable.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="5102" RasterYSize="2041" DataType="Byte" BlockXSize="5102" BlockYSize="1" />
+      <SrcRect xOff="0" yOff="0" xSize="5102" ySize="2041" />
+      <DstRect xOff="14286" yOff="73471" xSize="5102" ySize="2041" />
+      <NODATA>255</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">E:/Marco/australia_lu_model/data/allocation/wa/2015a\pred_2015_509011231_v3_test_stable.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="6123" RasterYSize="4081" DataType="Byte" BlockXSize="6123" BlockYSize="1" />
+      <SrcRect xOff="0" yOff="0" xSize="6123" ySize="4081" />
+      <DstRect xOff="13265" yOff="74492" xSize="6123" ySize="4081" />
+      <NODATA>255</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">E:/Marco/australia_lu_model/data/allocation/wa/2015a\pred_2015_509011232_v3_test_stable.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="2041" RasterYSize="1020" DataType="Byte" BlockXSize="2041" BlockYSize="4" />
+      <SrcRect xOff="0" yOff="0" xSize="2041" ySize="1020" />
+      <DstRect xOff="17347" yOff="79594" xSize="2041" ySize="1020" />
+      <NODATA>255</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">E:/Marco/australia_lu_model/data/allocation/wa/2015a\pred_2015_509011233_v3_test_stable.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="2041" RasterYSize="2041" DataType="Byte" BlockXSize="2041" BlockYSize="4" />
+      <SrcRect xOff="0" yOff="0" xSize="2041" ySize="2041" />
+      <DstRect xOff="17347" yOff="78573" xSize="2041" ySize="2041" />
+      <NODATA>255</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">E:/Marco/australia_lu_model/data/allocation/wa/2015a\pred_2015_509011234_v3_test_stable.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="6122" RasterYSize="2041" DataType="Byte" BlockXSize="6122" BlockYSize="1" />
+      <SrcRect xOff="0" yOff="0" xSize="6122" ySize="2041" />
+      <DstRect xOff="14286" yOff="77553" xSize="6122" ySize="2041" />
+      <NODATA>255</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">E:/Marco/australia_lu_model/data/allocation/wa/2015a\pred_2015_509011235_v3_test_stable.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="3061" RasterYSize="2041" DataType="Byte" BlockXSize="3061" BlockYSize="2" />
+      <SrcRect xOff="0" yOff="0" xSize="3061" ySize="2041" />
+      <DstRect xOff="17347" yOff="76532" xSize="3061" ySize="2041" />
+      <NODATA>255</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">E:/Marco/australia_lu_model/data/allocation/wa/2015a\pred_2015_509021236_v3_test_stable.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="3061" RasterYSize="3061" DataType="Byte" BlockXSize="3061" BlockYSize="2" />
+      <SrcRect xOff="0" yOff="0" xSize="3061" ySize="3061" />
+      <DstRect xOff="10204" yOff="65308" xSize="3061" ySize="3061" />
+      <NODATA>255</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">E:/Marco/australia_lu_model/data/allocation/wa/2015a\pred_2015_509021237_v3_test_stable.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="5102" RasterYSize="5102" DataType="Byte" BlockXSize="5102" BlockYSize="1" />
+      <SrcRect xOff="0" yOff="0" xSize="5102" ySize="5102" />
+      <DstRect xOff="14286" yOff="65308" xSize="5102" ySize="5102" />
+      <NODATA>255</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">E:/Marco/australia_lu_model/data/allocation/wa/2015a\pred_2015_509021238_v3_test_stable.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="6122" RasterYSize="6123" DataType="Byte" BlockXSize="6122" BlockYSize="1" />
+      <SrcRect xOff="0" yOff="0" xSize="6122" ySize="6123" />
+      <DstRect xOff="12245" yOff="61226" xSize="6122" ySize="6123" />
+      <NODATA>255</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">E:/Marco/australia_lu_model/data/allocation/wa/2015a\pred_2015_509021239_v3_test_stable.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="5102" RasterYSize="6123" DataType="Byte" BlockXSize="5102" BlockYSize="1" />
+      <SrcRect xOff="0" yOff="0" xSize="5102" ySize="6123" />
+      <DstRect xOff="7143" yOff="61226" xSize="5102" ySize="6123" />
+      <NODATA>255</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">E:/Marco/australia_lu_model/data/allocation/wa/2015a\pred_2015_509021240_v3_test_stable.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="6123" RasterYSize="5102" DataType="Byte" BlockXSize="6123" BlockYSize="1" />
+      <SrcRect xOff="0" yOff="0" xSize="6123" ySize="5102" />
+      <DstRect xOff="17347" yOff="65308" xSize="6123" ySize="5102" />
+      <NODATA>255</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">E:/Marco/australia_lu_model/data/allocation/wa/2015a\pred_2015_509021241_v3_test_stable.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="8163" RasterYSize="6122" DataType="Byte" BlockXSize="8163" BlockYSize="1" />
+      <SrcRect xOff="0" yOff="0" xSize="8163" ySize="6122" />
+      <DstRect xOff="10204" yOff="60206" xSize="8163" ySize="6122" />
+      <NODATA>255</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">E:/Marco/australia_lu_model/data/allocation/wa/2015a\pred_2015_509021242_v3_test_stable.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="10204" RasterYSize="11225" DataType="Byte" BlockXSize="10204" BlockYSize="1" />
+      <SrcRect xOff="0" yOff="0" xSize="10204" ySize="11225" />
+      <DstRect xOff="16327" yOff="59185" xSize="10204" ySize="11225" />
+      <NODATA>255</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">E:/Marco/australia_lu_model/data/allocation/wa/2015a\pred_2015_509021243_v3_test_stable.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="3061" RasterYSize="3061" DataType="Byte" BlockXSize="3061" BlockYSize="2" />
+      <SrcRect xOff="0" yOff="0" xSize="3061" ySize="3061" />
+      <DstRect xOff="12245" yOff="66328" xSize="3061" ySize="3061" />
+      <NODATA>255</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">E:/Marco/australia_lu_model/data/allocation/wa/2015a\pred_2015_509021244_v3_test_stable.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="3062" RasterYSize="3061" DataType="Byte" BlockXSize="3062" BlockYSize="2" />
+      <SrcRect xOff="0" yOff="0" xSize="3062" ySize="3061" />
+      <DstRect xOff="11224" yOff="65308" xSize="3062" ySize="3061" />
+      <NODATA>255</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">E:/Marco/australia_lu_model/data/allocation/wa/2015a\pred_2015_509021245_v3_test_stable.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="4082" RasterYSize="3061" DataType="Byte" BlockXSize="4082" BlockYSize="2" />
+      <SrcRect xOff="0" yOff="0" xSize="4082" ySize="3061" />
+      <DstRect xOff="12245" yOff="67349" xSize="4082" ySize="3061" />
+      <NODATA>255</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">E:/Marco/australia_lu_model/data/allocation/wa/2015a\pred_2015_509031246_v3_test_stable.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="9184" RasterYSize="4082" DataType="Byte" BlockXSize="9184" BlockYSize="1" />
+      <SrcRect xOff="0" yOff="0" xSize="9184" ySize="4082" />
+      <DstRect xOff="11224" yOff="68369" xSize="9184" ySize="4082" />
+      <NODATA>255</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">E:/Marco/australia_lu_model/data/allocation/wa/2015a\pred_2015_509031247_v3_test_stable.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="12245" RasterYSize="5103" DataType="Byte" BlockXSize="12245" BlockYSize="1" />
+      <SrcRect xOff="0" yOff="0" xSize="12245" ySize="5103" />
+      <DstRect xOff="16327" yOff="69389" xSize="12245" ySize="5103" />
+      <NODATA>255</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">E:/Marco/australia_lu_model/data/allocation/wa/2015a\pred_2015_509031248_v3_test_stable.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="3062" RasterYSize="3061" DataType="Byte" BlockXSize="3062" BlockYSize="2" />
+      <SrcRect xOff="0" yOff="0" xSize="3062" ySize="3061" />
+      <DstRect xOff="11224" yOff="70410" xSize="3062" ySize="3061" />
+      <NODATA>255</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">E:/Marco/australia_lu_model/data/allocation/wa/2015a\pred_2015_509031249_v3_test_stable.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="2041" RasterYSize="2041" DataType="Byte" BlockXSize="2041" BlockYSize="4" />
+      <SrcRect xOff="0" yOff="0" xSize="2041" ySize="2041" />
+      <DstRect xOff="14286" yOff="71430" xSize="2041" ySize="2041" />
+      <NODATA>255</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">E:/Marco/australia_lu_model/data/allocation/wa/2015a\pred_2015_509031250_v3_test_stable.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="6122" RasterYSize="5102" DataType="Byte" BlockXSize="6122" BlockYSize="1" />
+      <SrcRect xOff="0" yOff="0" xSize="6122" ySize="5102" />
+      <DstRect xOff="12245" yOff="70410" xSize="6122" ySize="5102" />
+      <NODATA>255</NODATA>
+    </ComplexSource>
+  </VRTRasterBand>
+</VRTDataset>

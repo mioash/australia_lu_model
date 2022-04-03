@@ -1,0 +1,361 @@
+import ee 
+from ee import batch
+import geemap
+# Initialize the Earth Engine object, using the authentication credentials.
+ee.Initialize()
+
+from add_property import add_prop
+from allocator import allocate
+from mask_image import define_image
+
+
+# urb = ee.Image("users/mioash/Calderon_etal_Australian_land-cover/Tas_lc2010_test1_urban")
+# urb = urb.unmask(urb.focal_mean(8)).unmask(urb.focal_mean(8))
+# crop = ee.Image("users/mioash/Calderon_etal_Australian_land-cover/Tas_lc2010_test1_crop")
+# crop = crop.unmask(crop.focal_mean(8)).unmask(crop.focal_mean(8))
+# forest = ee.Image("users/mioash/Calderon_etal_Australian_land-cover/Tas_lc2010_test1_forest")
+# forest = forest.unmask(forest.focal_mean(8)).unmask(forest.focal_mean(8))
+# grass = ee.Image("users/mioash/Calderon_etal_Australian_land-cover/Tas_lc2010_test1_grass")
+# grass = grass.unmask(grass.focal_mean(8)).unmask(grass.focal_mean(8))
+
+# crop = ee.Image('users/mioash/Calderon_etal_Australian_land-cover/Tas_lc2010_probdouble_cropland')
+# forest = ee.Image('users/mioash/Calderon_etal_Australian_land-cover/Tas_lc2010_probdouble_forest')
+# grass = ee.Image('users/mioash/Calderon_etal_Australian_land-cover/Tas_lc2010_probdouble_grassland')
+# urb = ee.Image('users/mioash/Calderon_etal_Australian_land-cover/Tas_lc2010_probdouble_urban')
+# water = ee.Image('users/mioash/Calderon_etal_Australian_land-cover/Tas_lc2010_probdouble_water')
+# other = ee.Image('users/mioash/Calderon_etal_Australian_land-cover/Tas_lc2010_probdouble_other')
+
+crop = ee.Image('users/mioash/Calderon_etal_Australian_land-cover/Tas_lc2010_anuclim_nneigh_ndist_naccess_tenure_cropland')
+forest = ee.Image('users/mioash/Calderon_etal_Australian_land-cover/Tas_lc2010_anuclim_nneigh_ndist_naccess_tenure_forest')
+grass = ee.Image('users/mioash/Calderon_etal_Australian_land-cover/Tas_lc2010_anuclim_nneigh_ndist_naccess_tenure_grassland')
+urb = ee.Image('users/mioash/Calderon_etal_Australian_land-cover/Tas_lc2010_anuclim_nneigh_ndist_naccess_tenure_urban')
+water = ee.Image('users/mioash/Calderon_etal_Australian_land-cover/Tas_lc2010_anuclim_nneigh_ndist_naccess_tenure_water')
+other = ee.Image('users/mioash/Calderon_etal_Australian_land-cover/Tas_lc2010_anuclim_nneigh_ndist_naccess_tenure_other')
+
+Landcover_vispar = {"opacity":1,"min":0,"max":5,"palette":["FFEE88","55AA22","DDCC66","BB0011","5566AA","882255"]}
+lc_aus = ee.Image("users/mioash/Calderon_etal_Australian_land-cover/Lc_Aus_1985_2015_v1")
+ent_aus = ee.Image("users/mioash/Calderon_etal_Australian_land-cover/Australia_ent_v1")
+Entropy_vispar = {"max":1.8,"palette":["d6ced0","008350","000000"]}
+margin_of_victory = ee.Image("users/mioash/Calderon_etal_Australian_land-cover/margin_of_victory")
+mov_vispar = {"min":0,"max":10000,"palette":["d7191c","fdae61","ffffbf","abd9e9","2c7bb6"]}
+
+tas_sa2 = ee.FeatureCollection("users/mioash/transitions/tas_sa2_pixels")
+tas_sa2_summary = ee.FeatureCollection("users/mioash/transitions/tas_summary_sa2")
+sa2 = ee.FeatureCollection("users/mioash/drivers_lcaus/boundaries/SA2")
+
+
+
+
+#lclass = 'urban'
+sa2_tas = sa2.filterMetadata('STE_CODE11','equals','6')
+id_look = 'SA2_MAIN11'
+#sa2_id = [601021010, 601021005]  #601021011
+sa2_id = 602021057 #603011065 good accuracy
+#.filter(ee.Filter.inList('SA2_MAIN11', sa2_id))
+prob_max = crop.add(forest).add(grass).add(urb)
+
+cunit = crop.multiply(100).divide(prob_max)
+funit = forest.multiply(100).divide(prob_max)
+gunit = grass.multiply(100).divide(prob_max)
+bunit = urb.multiply(100).divide(prob_max)
+
+def id_parse (FCC):
+    return ee.Feature(FCC).set(id_look, ee.Number.parse(FCC.get(id_look)))
+
+sa2_tas = sa2_tas.map(id_parse)
+sa_test = sa2_tas.filterMetadata(id_look,'equals',sa2_id)#filter(ee.Filter.inList(id_look, sa2_id))#.filterMetadata(id_look,'equals',sa2_id)
+#print(ee.FeatureCollection(sa_test).size().getInfo())
+nsa2 = sa2_tas.size().getInfo()
+p8590 = add_prop(sa2_tas,tas_sa2,'85-90',nsa2)
+p9500 = add_prop(sa2_tas,tas_sa2,'95-00',nsa2)
+p0005 = add_prop(sa2_tas,tas_sa2,'00-05',nsa2)
+p0510 = add_prop(sa2_tas,tas_sa2,'05-10',nsa2)
+p1015 = add_prop(sa2_tas,tas_sa2,'10-15',nsa2)
+
+properties = ee.List(["urban_to_other",  "other_to_crop",  "grass_to_grass",  "crop_to_urban",  "crop_to_water",
+"forest_to_crop",  "other_to_other",  "urban_to_forest",  "grass_to_water",  "crop_to_grass",  "forest_to_grass",
+"urban_to_grass",  "forest_to_water",  "grass_to_urban",  "forest_to_other",  "crop_to_other",  "water_to_urban",
+"other_to_water",  "crop_to_forest",  "urban_to_crop",  "other_to_grass", "forest_to_forest", "urban_to_water",  
+"grass_to_crop",  "grass_to_forest",  "water_to_other",  "urban_to_urban",  "crop_to_crop", "water_to_crop",  
+"water_to_grass",  "other_to_forest",  "water_to_forest",  "other_to_urban",  "grass_to_other", "forest_to_urban",  
+                     "water_to_water"])
+lclasses = ee.List(['crop','forest','grass','urban'])
+#list_probs = ee.List([crop,forest,grass,urb])
+list_probs = ee.List([cunit,funit,gunit,bunit])
+
+lct1 = lc_aus.select('b2005')
+lpct = lct1.add(1)
+
+
+
+
+import importlib
+import allocator
+importlib.reload(allocator)
+from allocator import allocate
+
+lc_all = define_image(0,0,'none',2010,5)
+#lct1 = lct1.rename('lc_t1') 
+#new_crop = allocate(lct1.rename('lc_t1'),p0510,lclasses,None,
+#                    crop,'crop',0,None,None,sa_test,id_look,sa2_id)
+
+#new_crop1 = allocate(lct1.rename('lc_t1'),p0510,lclasses,ee.List([forest,grass,urb]),
+#                    crop,'crop',0,'high_prob',4500,sa_test,id_look,sa2_id)
+
+allocate_m = None #'low_high_prob' #'high_prob' #lowest_prob
+met_all = 'unrestricted'
+
+new_urb = allocate(lct1.rename('lc_t1'),p0510,lclasses,ee.List([crop,forest,grass]),
+                     urb,'urban',3,allocate_m,0.75,'expansion',sa_test,id_look,sa2_id,None,None)
+itm = new_urb
+
+new_crop = allocate(lct1.rename('lc_t1'),p0510,lclasses.remove('urban'),ee.List([forest,grass]),
+                   crop,'crop',0,allocate_m,.045,met_all,sa_test,id_look,sa2_id,'mask_prev',itm)
+itm = ee.ImageCollection([itm,new_crop]).mosaic()
+new_forest = allocate(lct1.rename('lc_t1'),p0510,lclasses.remove('urban'),ee.List([crop,grass]),
+                    forest,'forest',1,allocate_m,0.45,met_all,sa_test,id_look,sa2_id,
+                      'mask_prev', itm)
+itm = ee.ImageCollection([itm,new_forest]).mosaic()
+new_grass = allocate(lct1.rename('lc_t1'),p0510,lclasses.remove('urban'),ee.List([crop,forest]),
+                      grass,'grass',2,allocate_m,0.45,met_all,sa_test,id_look,sa2_id,
+                     'mask_prev', itm)
+itm = ee.ImageCollection([itm,new_grass]).mosaic()
+
+
+
+
+
+aaa = lc_aus.select('b2010').add(1)
+aaa= aaa.clip(sa_test).updateMask(aaa.eq(4))
+
+lc_countx = aaa.reduceRegion(
+    reducer=ee.Reducer.count(),
+    geometry=sa_test,
+    scale=30
+)
+print('real_2010',lc_countx.getInfo())
+
+lc_countx = new_urb.reduceRegion(
+    reducer=ee.Reducer.count(),
+    geometry=sa_test,
+    scale=30
+)
+
+print('simulated',lc_countx.getInfo())
+
+
+
+
+
+
+
+Map = geemap.Map(center=[-42.8,147.45], zoom=10)
+Map.add_basemap("SATELLITE")
+
+#Map.addLayer(new_crop1,{"palette":['blue']},'Crop1_2010')
+#Map.addLayer(new_crop2,{"palette":['red']},'Crop2_2010')
+#
+
+#Map.addLayer(new_urb1,{"palette":['red']},'Urb1_2010')
+#Map.addLayer(urb,mov_vispar,'Urb_probs')
+#Map.addLayer(forest,mov_vispar,'forest_probs')
+#Map.addLayer(ee.ImageCollection([new_crop,new_urb]).mosaic(),{"palette":['black']},'mos_2010')
+#Map.addLayer(new_crop,{"palette":['yellow']},'Crop_2010')
+#Map.addLayer(new_forest,{"palette":['green']},'forest_2010')
+# Map.addLayer(new_grass,{"palette":['orange']},'grass_2010')
+#Map.addLayer(new_urb,{"palette":['red']},'Urb_2010')
+Map.addLayer(new_2010.select('simulation'),Landcover_vispar,'United_2010')
+#Map.addLayer(itm,{"palette":['grey']},'ITM')
+Map.addLayer(lc_aus.select('b2005').clip(sa_test),Landcover_vispar,'Land-cover Australia-2005')
+Map.addLayer(lc_aus.select('b2010').clip(sa_test),Landcover_vispar,'Land-cover Australia-2010')
+
+Map
+
+
+
+
+
+
+
+#new_2010 = ee.ImageCollection([new_urb.where(new_urb,3),new_crop.where(new_crop,0),new_forest.where(new_forest,1)
+#                                   ,new_grass.where(new_grass,2)]).mosaic().rename('simulation')
+
+new_2010 = ee.Image(99).where(new_crop,0)
+new_2010 = new_2010.where(new_forest,1)
+new_2010 = new_2010.where(new_grass,2)
+new_2010 = new_2010.where(new_urb,3)
+new_2010 = new_2010.rename('simulation').updateMask(new_2010.neq(99)).clip(sa_test)
+
+#new_2010 = ee.ImageCollection([new_urb,new_crop,new_forest,new_grass]).mosaic().rename('simulation')
+
+
+#new_2010 = new_2010.subtract(1)
+
+lcca = lc_aus.select('b2010')
+lcca = lcca.updateMask(lcca.lt(4))
+
+new_2010 = new_2010.addBands(lcca)
+
+SAMPLE = new_2010.stratifiedSample(
+        numPoints= 1500, 
+        classBand= 'b2010', 
+        region=sa_test, 
+        scale= 30)
+
+testAccuracy = SAMPLE.errorMatrix('b2010', 'simulation');
+print('CF',testAccuracy.getInfo())
+print('Acc',testAccuracy.accuracy().getInfo())
+print('Cons',testAccuracy.consumersAccuracy().getInfo())
+print('Prod',testAccuracy.producersAccuracy().getInfo())
+#print('Acc',testAccuracy.accuracy().getInfo())
+#print('Acc',testAccuracy.accuracy().getInfo())
+
+#print(sa_test.first().get(id_look).getInfo())
+
+
+
+
+
+
+#Map.addLayer(urb,mov_vispar,'Urb_probs')
+lclasses = ee.List(['crop','forest','grass','urban'])
+print(lclasses.remove('urban').getInfo())
+
+
+
+
+
+
+
+def calling (FC):
+    idf = FC.get(id_look).getInfo()
+    return allocate(lct1.rename('lc_t1'),p0510,lclasses,ee.List([crop,forest,grass]),
+                     urb,'urban',3,allocate_m,7500,'expansion',FC,id_look,idf,None,None)
+
+ff = sa_test.map(calling)
+
+
+
+lc_countx = new_urb.reduceRegion(
+    reducer=ee.Reducer.count(),
+    geometry=sa_test,
+    scale=30
+)
+
+print('unr',lc_countx.getInfo())
+
+
+lc_countx = new_urb1.reduceRegion(
+    reducer=ee.Reducer.count(),
+    geometry=sa_test,
+    scale=30
+)
+print('exp',lc_countx.getInfo())
+aaa = lc_aus.select('b2010').add(1)
+aaa= aaa.clip(sa_test).updateMask(aaa.eq(4))
+
+lc_countx = aaa.reduceRegion(
+    reducer=ee.Reducer.count(),
+    geometry=sa_test,
+    scale=30
+)
+
+
+print('orig',lc_countx.getInfo())
+
+aaa = lc_aus.select('b2005').add(1)
+aaa= aaa.clip(sa_test).updateMask(aaa.eq(4))
+
+lc_countx = aaa.reduceRegion(
+    reducer=ee.Reducer.count(),
+    geometry=sa_test,
+    scale=30
+)
+
+
+print('orig 2005',lc_countx.getInfo())
+
+                    #print(urb.bandNames().getInfo())
+aaa = lc_aus.select('b2010').add(1)
+aaa= aaa.clip(sa_test).updateMask(aaa.eq(4))
+
+bbb = lc_aus.select('b2005').add(1)
+bbb= bbb.clip(sa_test).updateMask(bbb.eq(4))
+
+aaa = aaa.updateMask(bbb)
+
+lc_countx = aaa.reduceRegion(
+    reducer=ee.Reducer.count(),
+    geometry=sa_test,
+    scale=30
+)
+
+print('MAP STABLE',lc_countx.getInfo())
+                    
+
+
+
+
+
+i0510 = p0510.reduceToImage(properties=[ee.String(properties.get(0))],
+                                  reducer=ee.Reducer.first()).rename([ee.String(properties.get(0))])
+
+for i in range(1,properties.size().getInfo()):
+    i0510 = i0510.addBands(p0510.reduceToImage(properties=[ee.String(properties.get(i))],
+                                  reducer=ee.Reducer.first()).rename([ee.String(properties.get(i))]))
+i0510 = i0510.divide(900).round() #area to pixel number
+i0510 = i0510.addBands(p0510.reduceToImage(properties=["SA2_MAIN11"],
+                                  reducer=ee.Reducer.first()).rename(["SA2_MAIN11"]))
+
+
+
+
+
+#crop_to_crop
+
+lc_cl = crop.select('classification').clip(sa_test)
+lc_cl = lc_cl.updateMask(lpct.eq(1))
+
+lc_count = lc_cl.reduceRegion(
+  reducer=ee.Reducer.count(),
+  geometry=sa_test,
+  scale=30
+)
+
+change = ee.Number(p0510.filterMetadata(id_look,'equals',sa2_id).first().get('crop_to_crop')).divide(900)
+cutoff = ee.Number(1).subtract(change.divide(ee.Number(lc_count.get('classification'))))
+
+lc_cut = lc_cl.reduceRegion(
+  reducer=ee.Reducer.percentile([cutoff.multiply(100)]),
+  geometry=sa_test,
+  scale=30
+)
+
+cropt1 = ee.Image(lc_cl.updateMask(lc_cl.gte(ee.Number(lc_cut.get('classification')))))
+
+#general
+
+for i in range(1,lclasses.size().getInfo()):
+    lc_cl = crop.select('classification').clip(sa_test)
+    lc_cl = lc_cl.updateMask(lct1.eq(i))  
+    lc_count = lc_cl.reduceRegion(
+        reducer=ee.Reducer.count(),
+        geometry=sa_test,
+        scale=30)
+    change = ee.Number(p0510.filterMetadata(id_look,'equals',sa2_id).first().get(lclasses.get(i).getInfo()+str('_to_crop'))).divide(900)
+    cutoff = ee.Number(1).subtract(change.divide(ee.Number(lc_count.get('classification'))))
+    lc_cut = lc_cl.reduceRegion(
+        reducer=ee.Reducer.percentile([cutoff.multiply(100)]),
+        geometry=sa_test,
+        scale=30)
+    ctn = lc_cl.updateMask(lc_cl.gte(ee.Number(lc_cut.get('classification'))))
+    cropt1 = ee.List([cropt1,ee.Image(ctn)])
+
+new_crop = ee.ImageCollection(cropt1.flatten()).mosaic()
+new_crop = new_crop.where(new_crop,1)
+
+Map = geemap.Map(center=[-42.8,147.45], zoom=10)
+Map.add_basemap("SATELLITE")
+Map.addLayer(new_crop,{"palette":['yellow']},'Crop_2010')
+Map.addLayer(lc_aus.select('b2010').clip(sa_test),Landcover_vispar,'Land-cover Australia-2010')
+Map

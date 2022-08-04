@@ -13,18 +13,6 @@ by Marco Calderón-Loor 1,2*, Michalis Hadjikakou 1, Richard Hewitt 3, Raymundo 
 
 This paper has been submitted for publication in *Environmental Modelling and Software*.
 
-## Using the code
-
-You can download a copy of all the files in this repository by cloning the
-[git](https://git-scm.com/) repository:
-
-    git clone https://github.com/antonia-had/paper_template.git
-
-or [download a zip archive](https://github.com/antonia-had/paper_template/archive/master.zip).
-
-A copy of the repository is also archived at *insert DOI here*
-
-
 ## Data
 
 -	https://mioash.users.earthengine.app/view/australialandchangeforecast
